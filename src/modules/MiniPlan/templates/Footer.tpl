@@ -1,2 +1,2 @@
 <br />
-<p>{gt text='Miniplan - (c) by Christian Flach'}</p>
+<p>Miniplan &ndash; &copy; Christian Flach</p>
