@@ -44,7 +44,11 @@ class MiniPlan_Installer extends Zikula_AbstractInstaller
 	 */
 	public function upgrade($oldversion)
 	{
-		// Update successful
+		switch($oldversion)
+		{
+		default:
+			break;
+		}
 		return true;
 	}
 
@@ -59,10 +63,8 @@ class MiniPlan_Installer extends Zikula_AbstractInstaller
 	 */
 	public function uninstall()
 	{
-		// Remove module vars.
 		$this->delVars();
 
-		// Deletion successful.
 		return true;
 	}
 
