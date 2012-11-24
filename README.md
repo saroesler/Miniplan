@@ -1,4 +1,9 @@
 Miniplan
 ========
 
-Zikula 1.3.x module - full automatic ministrants-plan | In developement
+### Zikula 1.3.x module ###
+
+
+Full automatic ministrants-plan.
+
+**In developement**
