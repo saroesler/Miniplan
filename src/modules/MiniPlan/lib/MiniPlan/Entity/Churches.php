@@ -22,9 +22,15 @@ class MiniPlan_Entity_Churches extends Zikula_EntityAccess
      */
     private $cid;
 
-
     /**
-     * The following are annotations which define the birthday field.
+     * The following are annotations which define the name field.
+     *
+     * @ORM\Column(type="string", length="100")
+     */
+    private $name;
+    
+    /**
+     * The following are annotations which define the adress field.
      *
      * @ORM\Column(type="string", length="255")
      */
@@ -35,7 +41,7 @@ class MiniPlan_Entity_Churches extends Zikula_EntityAccess
     {
         return $this->cid;
     }
-
+    
     public function getAdress()
     {
         return $this->adress;
@@ -44,5 +50,15 @@ class MiniPlan_Entity_Churches extends Zikula_EntityAccess
     public function setAdress($adress)
     {
         $this->adress = $adress;
+    }
+    
+    public function getName()
+    {
+    	return $this->name;
+    }
+    
+    public function setName($name)
+    {
+    	$this->name = $name;
     }
 }
