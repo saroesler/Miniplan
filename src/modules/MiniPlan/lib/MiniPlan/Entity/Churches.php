@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Annotations define the entity mappings to database.
  *
  * @ORM\Entity
- * @ORM\Table(name="MiniPlan_Ministrants")
+ * @ORM\Table(name="MiniPlan_Churches")
  */
 class MiniPlan_Entity_Churches extends Zikula_EntityAccess
 {

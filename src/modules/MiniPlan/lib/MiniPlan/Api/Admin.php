@@ -14,7 +14,7 @@ class MiniPlan_Api_Admin extends Zikula_AbstractApi
 		$links = array();
 		if (SecurityUtil::checkPermission('MiniPlan::', '::', ACCESS_ADMIN)) {
 			$links[] = array(
-				'url'=> ModUtil::url('ExampleModule', 'admin', 'main'),
+				'url'=> ModUtil::url('MiniPlan', 'admin', 'main'),
 				'text'  => $this->__('Main'),
 				'title' => $this->__('Main'),
 				'class' => 'z-icon-es-config',
