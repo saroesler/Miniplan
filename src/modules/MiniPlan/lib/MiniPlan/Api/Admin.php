@@ -17,7 +17,7 @@ class MiniPlan_Api_Admin extends Zikula_AbstractApi
 				'url'=> ModUtil::url('ExampleModule', 'admin', 'main'),
 				'text'  => $this->__('Main'),
 				'title' => $this->__('Main'),
-				'class' => 'z-icon-es-help',
+				'class' => 'z-icon-es-config',
 			);
 		}
 		return $links;
