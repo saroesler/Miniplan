@@ -4,18 +4,18 @@
  */
 class MiniPlan_Installer extends Zikula_AbstractInstaller
 {
-	
+
 	/**
 	 * @brief Provides an array containing default values for module variables (settings).
 	 * @return array An array indexed by variable name containing the default values for those variables.
-	 * 
+	 *
 	 * @author Christian Flach
 	 */
 	protected function getDefaultModVars()
 	{
 		return array();
 	}
-	
+
 	/**
 	 * Install the MiniPlan module.
 	 *
@@ -28,6 +28,15 @@ class MiniPlan_Installer extends Zikula_AbstractInstaller
 	{
 		$this->setVars($this->getDefaultModVars());
 
+		// Create database tables.
+		try {
+			DoctrineHelper::createSchema($this->entityManager, array(
+				'MiniPlan_Entity_Ministrants'
+			));
+		} catch (Exception $e) {
+			return false;
+		}
+		
 		return true;
 	}
 
@@ -46,8 +55,8 @@ class MiniPlan_Installer extends Zikula_AbstractInstaller
 	{
 		switch($oldversion)
 		{
-		default:
-			break;
+			default:
+				break;
 		}
 		return true;
 	}
@@ -63,6 +72,11 @@ class MiniPlan_Installer extends Zikula_AbstractInstaller
 	 */
 	public function uninstall()
 	{
+		// Drop database tables
+		DoctrineHelper::dropSchema($this->entityManager, array(
+			'MiniPlan_Entity_Ministrants'
+		));
+		
 		$this->delVars();
 
 		return true;
