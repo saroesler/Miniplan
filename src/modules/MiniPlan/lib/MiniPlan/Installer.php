@@ -34,7 +34,23 @@ class MiniPlan_Installer extends Zikula_AbstractInstaller
 				'MiniPlan_Entity_Ministrants'
 			));
 		} catch (Exception $e) {
-			return false;
+			return LogUtil::registerError($e);
+		}
+		
+		try {
+			DoctrineHelper::createSchema($this->entityManager, array(
+				'MiniPlan_Entity_Churches'
+			));
+		} catch (Exception $e) {
+			return LogUtil::registerError($e);
+		}
+		
+		try {
+			DoctrineHelper::createSchema($this->entityManager, array(
+				'MiniPlan_Entity_Messes'
+			));
+		} catch (Exception $e) {
+			return LogUtil::registerError($e);
 		}
 		
 		return true;
@@ -77,6 +93,14 @@ class MiniPlan_Installer extends Zikula_AbstractInstaller
 			'MiniPlan_Entity_Ministrants'
 		));
 		
+		DoctrineHelper::dropSchema($this->entityManager, array(
+			'MiniPlan_Entity_Churches'
+		));
+		
+		DoctrineHelper::dropSchema($this->entityManager, array(
+			'MiniPlan_Entity_Messes'
+		));
+
 		$this->delVars();
 
 		return true;
