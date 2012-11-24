@@ -20,6 +20,15 @@ class MiniPlan_Api_Admin extends Zikula_AbstractApi
 				'class' => 'z-icon-es-config',
 			);
 		}
+		
+		if (SecurityUtil::checkPermission('MiniPlan::', '::', ACCESS_MODERATE)) {
+			$links[] = array(
+				'url'=> ModUtil::url('MiniPlan', 'admin', 'ChurchesView'),
+				'text'  => $this->__('Churches'),
+				'title' => $this->__('Churches'),
+				'class' => 'z-icon-es-display',
+			);
+		}
 		return $links;
 	}
 }
