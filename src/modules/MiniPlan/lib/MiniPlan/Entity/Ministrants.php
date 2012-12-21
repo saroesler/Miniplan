@@ -44,4 +44,10 @@ class MiniPlan_Entity_Ministrants extends Zikula_EntityAccess
     {
         $this->birthday = new DateTime($birthday);
     }
+    
+    public function getMinistrant()
+    {
+        return $this->ministrant;
+    }
+    
 }

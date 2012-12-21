@@ -47,7 +47,7 @@ class MiniPlan_Installer extends Zikula_AbstractInstaller
 		
 		try {
 			DoctrineHelper::createSchema($this->entityManager, array(
-				'MiniPlan_Entity_Messes'
+				'MiniPlan_Entity_Worships'
 			));
 		} catch (Exception $e) {
 			return LogUtil::registerError($e);
@@ -98,7 +98,7 @@ class MiniPlan_Installer extends Zikula_AbstractInstaller
 		));
 		
 		DoctrineHelper::dropSchema($this->entityManager, array(
-			'MiniPlan_Entity_Messes'
+			'MiniPlan_Entity_Worships'
 		));
 
 		$this->delVars();

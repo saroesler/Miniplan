@@ -29,6 +29,54 @@ class MiniPlan_Api_Admin extends Zikula_AbstractApi
 				'class' => 'z-icon-es-display',
 			);
 		}
+		
+		if (SecurityUtil::checkPermission('MiniPlan::', '::', ACCESS_MODERATE)) {
+			$links[] = array(
+				'url'=> ModUtil::url('MiniPlan', 'admin', 'Worships'),
+				'text'  => $this->__('Worships'),
+				'title' => $this->__('Worships'),
+				'class' => 'z-icon-es-display',
+			);
+		}
+		
+		if (SecurityUtil::checkPermission('MiniPlan::', '::', ACCESS_MODERATE)) {
+			$links[] = array(
+				'url'=> ModUtil::url('MiniPlan', 'admin', 'Ministrants'),
+				'text'  => $this->__('Ministrants'),
+				'title' => $this->__('List of all Ministrants'),
+				'class' => 'z-icon-es-display',
+			);
+		}
+		
+		if (SecurityUtil::checkPermission('MiniPlan::', '::', ACCESS_MODERATE)) {
+			$links[] = array(
+				'url'=> ModUtil::url('MiniPlan', 'admin', 'Restriction'),
+				'text'  => $this->__('Restriction'),
+				'title' => $this->__('Table of all restrictions.'),
+				'class' => 'z-icon-es-display',
+			);
+		}
 		return $links;
 	}
+	
+	public function getChurchSelector($args)
+	{
+		$churches = $this->entityManager->getRepository('MiniPlan_Entity_Churches')->findBy(array());
+		
+		$list = "<select name=\"{$args['name']}\">";
+		
+		foreach($churches as $church)
+		{
+			$list .="<option value=\"{$church->getCid()}\"> {$church->getName()} </option>";
+		}
+		$list .="</select>";
+		return $list;
+	}
+	
+	public function getChurchNameById($args)
+	{
+		$church = $this->entityManager->find('MiniPlan_Entity_Churches', $args['id']);
+		return $church->getName();
+	}
+	
 }

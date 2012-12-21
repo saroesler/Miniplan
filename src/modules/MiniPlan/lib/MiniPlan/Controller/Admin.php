@@ -31,9 +31,140 @@ class MiniPlan_Controller_Admin extends Zikula_AbstractController
     	$this->throwForbiddenUnless(SecurityUtil::checkPermission('MiniPlan::', '::', ACCESS_MODERATE));
     	
     	$churches = $this->entityManager->getRepository('MiniPlan_Entity_Churches')->findBy(array());
-    	
     	return $this->view
     		->assign('churches', $churches)
     		->fetch('Admin/ChurchesView.tpl');
     }
+    
+    /**
+     * @brief Churche add function.
+     * @throws Zikula_Forbidden If not ACCESS_MODERATE
+     * @return redirect self::ChurchesView()
+     */
+    public function ChurchAdd()
+    {
+    	$this->throwForbiddenUnless(SecurityUtil::checkPermission('MiniPlan::', '::', ACCESS_MODERATE));
+    	$action = FormUtil::getPassedValue('action', null, 'POST');
+    	switch($action)
+    	{
+    	case 'add':
+    		$name = FormUtil::getPassedValue('inname', null, 'POST');
+      		$adress = FormUtil::getPassedValue('inadress', null, 'POST'); 	
+    	
+			if($name == "")
+				return LogUtil::RegisterError($this->__("The added church has no name."), null, ModUtil::url($this->name, 'admin', 'ChurchesView'));
+			if($adress == "")
+				LogUtil::RegisterStatus($this->__("The church has no adress."));
+			
+			$church = new MiniPlan_Entity_Churches();
+			$church->setName($name);
+			$church->setAdress($adress);
+			$this->entityManager->persist($church);
+			$this->entityManager->flush();
+			LogUtil::RegisterStatus($this->__("Church has been added successfully."));
+			break;
+			
+		case 'del':
+			$actionid = FormUtil::getPassedValue('id',null,'POST');
+			if( $actionid=="")
+				return LogUtil::RegisterError($this->__("ID is missing."), null, ModUtil::url($this->name, 'admin','ChurchesView'));
+			$church = $this->entityManager->find('MiniPlan_Entity_Churches', $actionid);
+			$this->entityManager->remove($church);
+			$this->entityManager->flush();
+			LogUtil::RegisterStatus($this->__("Church has been removed successfully."));
+			break;				
+		}
+    	$this->redirect(ModUtil::url($this->name, 'admin', 'ChurchesView'));
+    } 
+    
+    public function Worships()
+    {
+    	$this->throwForbiddenUnless(SecurityUtil::checkPermission('MiniPlan::', '::', ACCESS_MODERATE));
+    	
+    	$worships = $this->entityManager->getRepository('MiniPlan_Entity_Worships')->findBy(array());
+    	return $this->view
+    		->assign('worships', $worships)
+    		->fetch('Admin/Worships.tpl');
+    }
+    
+    /**
+     * @brief Churche add function.
+     * @throws Zikula_Forbidden If not ACCESS_MODERATE
+     * @return redirect self::ChurchesView()
+     */
+    public function WorshipManage()
+    {
+    	$this->throwForbiddenUnless(SecurityUtil::checkPermission('MiniPlan::', '::', ACCESS_MODERATE));
+    	$action = FormUtil::getPassedValue('action', null, 'POST');
+    	switch($action)
+    	{
+    	case 'add':
+    		$cid = FormUtil::getPassedValue('inchurch', null, 'POST');
+      		$date = FormUtil::getPassedValue('indate', null, 'POST'); 
+      		$ministrantsrequired = FormUtil::getPassedValue('inministrantsrequired', 0, 'POST'); 	
+    	
+			if($cid == "")
+				return LogUtil::RegisterError($this->__("The added worship has no church to take place."), null, ModUtil::url($this->name, 'admin', 'Worships'));
+			if($date == "")
+				return LogUtil::RegisterError($this->__("The added worship has no date to happen."), null, ModUtil::url($this->name, 'admin', 'Worships'));
+			if($ministrantsrequired == "")
+				LogUtil::RegisterStatus($this->__("The worship has no ministrants."));
+			if($ministrantsrequired <0 )
+				return LogUtil::RegisterError($this->__("The number of ministrants is not allowed."), null, ModUtil::url($this->name, 'admin', 'Worships'));
+			
+			$worship = new MiniPlan_Entity_Worships();
+			$worship->setCid($cid);
+			$worship->setDate($date);
+			$worship->setMinistrantsRequired($ministrantsrequired);
+			$this->entityManager->persist($worship);
+			$this->entityManager->flush();
+			LogUtil::RegisterStatus($this->__("Worship has been added successfully."));
+			break;
+			
+		case 'del':
+			$actionid = FormUtil::getPassedValue('id',null,'POST');
+			if( $actionid=="")
+				return LogUtil::RegisterError($this->__("ID is missing."), null, ModUtil::url($this->name, 'admin','Worships'));
+			$worship = $this->entityManager->find('MiniPlan_Entity_Worships', $actionid);
+			$this->entityManager->remove($worship);
+			$this->entityManager->flush();
+			LogUtil::RegisterStatus($this->__("Worship has been removed successfully."));
+			break;				
+		}
+    	$this->redirect(ModUtil::url($this->name, 'admin', 'Worships'));
+    } 
+    
+      public function Ministrants()
+      {
+          	$this->throwForbiddenUnless(SecurityUtil::checkPermission('MiniPlan::', '::', ACCESS_MODERATE));
+          	
+          	//holen der Daten
+			$ministrants = ModUtil::apiFunc('Users', 'user', 'getall', array('uid' => $getAllArgs['letter']));
+			//Ausfiltern der UIDs
+			foreach($ministrants as $mini)
+					$miniuids[] = $mini['uid'];
+			
+			foreach($miniuids as $miniuid)
+			{
+				$activeduds[] = ModUtil::apiFunc('Profile', 'user', 'getallactive',
+                array('get' => 'viewable',
+                'uid' => $miniuid));
+                $test []= ModUtil::apiFunc('Profile', 'user', 'getallactive', array('uid' => $miniuid, 'get' => 'editable'));
+                //if($activeduds['Gruppe']['prop_listoptions']=='Ministrant') //array_pop($activeduds)
+			}
+
+						
+			print_r($miniuids);
+			//print_r($activeduds);
+			print_r($test);
+			        
+			 return true;
+    	return $this->view
+    		->assign('ministrants', $ministrants)
+    		->fetch('Admin/Ministrants.tpl');
+      }
+      public function ministrantsManage()
+      {
+      }
 }
+
