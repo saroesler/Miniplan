@@ -1,0 +1,111 @@
+.MiniSelectionLists{
+	list-style: none;
+}
+
+.MiniSelectionLists,
+.MiniSelectionLists ul {
+    background: inherit;
+    font-weight: bold;
+    list-style: none;
+}
+
+/*Hauptmenü*/
+.MiniSelectionLists li {
+    /*float: left;*/
+    position: relative;
+    padding: 0;
+    text-align: center;
+}
+
+.MiniSelectionLists li a,
+.MiniSelectionLists li span {
+    display:block;
+	font-style:normal; 
+	text-align:left;  
+	margin-right:0px; 
+	text-decoration:none; 
+	font-size:12px; 
+	border:/*1px solid #ccc*/none; 
+	padding: 10px 10px 5px;
+	/*font-family:  'Trebuchet MS',Verdana, Arial,Helvetica,sans-serif;*/
+	letter-spacing:1px;
+	color: #000 !important;
+	/*text-transform:uppercase;*/
+}
+
+.MiniSelectionLists li a:hover {
+    border:3px double #000;
+ 	padding: 7px 7px 2px;
+}
+
+/*2. Ebene*/
+.MiniSelectionLists{
+    font-weight: normal;
+    height: auto;
+    position: absolute;
+    display:none; 
+	margin-top:0px;
+	position:absolute;
+	float:right; 
+	z-index:999; 
+	min-width:1px;
+	box-shadow: 3px 3px 3px 1px #777777;
+}
+
+.MiniSelectionLists li li a,
+.MiniSelectionLists li li span {
+	text-align:left; 
+	height:auto; 
+	line-height:1; 
+	width:auto; 
+	letter-spacing:0px;
+	text-transform:none;
+}
+
+
+/*Bearbeitungsebene*/
+.MiniSelectionLists {
+    font-size: 0.8em;
+    margin: 0.5em 0;
+    list-style: none;
+    display: none;
+}
+
+.MiniSelectionLists li {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.MiniSelectionListsContainer{
+	position: absolute;
+}
+
+/**********
+Für die Infokästen
+*****************/
+.PreInfo span {display:none;}
+
+.PreInfo:hover span {
+	color:black;
+	background:#d0d0d0;
+	border:1px solid #666666;
+	font-style:normal;
+	display:block;
+	padding:2px;
+	z-index:999;
+	position:absolute;
+	border-radius: 5px;
+}
+
+/*********
+* Im Popup
+************/
+#statistic td:first-child {background: #FF0}
+#statistic td:nth-child(2n+3) {background: #CCC}
+
+.statisticMininame{
+	transform: rotate(90deg);
+	overflow:hidden;
+	margin-top:5px;
+}
