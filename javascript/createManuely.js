@@ -388,13 +388,8 @@ function AllDivision_Del()
 }
 
 function getStatistics(){
-	document.getElementById("statistic").style.display = 'block';
-	document.getElementById("showStatistic").style.display = 'none';
-	document.getElementById("hideStatistic").style.display = '';
-}
-
-function hideStatistics(){
-	document.getElementById("statistic").style.display = 'none';
-	document.getElementById("showStatistic").style.display = '';
-	document.getElementById("hideStatistic").style.display = 'none';
+	popup = window.open('','popup','width=200,height=200');
+	window.popup.document.write("<h1>Statistik</h1>  <table id=\"popupStatistics\"></table>");
+	var statisticTable = document.getElementById('statistic').innerHTML;
+	window.popup.document.getElementById("popupStatistics").innerHTML = statisticTable;
 }

@@ -104,16 +104,7 @@
 	{/foreach}
 </table>
 
-<a href="{modurl modname=Miniplan type=admin func=printOdt}" class="z-button">{gt text="Print"}  {img src='printer.png' modname='core' set='icons/extrasmall'}</a>
-<a onclick="AllDivision_Del()" class="z-button">{gt text= "Delete all Devisions!"} {img src='14_layer_deletelayer.png' modname='core' set='icons/extrasmall'}</a>
-
-<br />
-<br />
-<a onclick="getStatistics()" class="z-button" id="showStatistic">{gt text= "Show Statistics!"} {img src='14_layer_visible.png' modname='core' set='icons/extrasmall'}</a>
-<a onclick="hideStatistics()" class="z-button" id="hideStatistic" style="display:none">{gt text= "Hide Statistics!"} {img src='14_layer_novisible.png' modname='core' set='icons/extrasmall'}</a>
-<br /><br />
-
-<table id="statistic" style="display:none">
+<table id="statistic" style="display:block">
 	<tbody>
 		<tr>
 			<td ></td>
@@ -136,5 +127,7 @@
 	</tbody>
 </table>
 
+<a href="{modurl modname=Miniplan type=admin func=printOdt}" class="z-button">{gt text="Print"}  {img src='printer.png' modname='core' set='icons/extrasmall'}</a>
+<a onclick="AllDivision_Del()" class="z-button">{gt text= "Delete all Devisions!"} {img src='14_layer_deletelayer.png' modname='core' set='icons/extrasmall'}</a>
 
 {include file='Admin/Footer.tpl'}

@@ -207,21 +207,23 @@ class Miniplan_Creator_Statistik extends Zikula_AbstractController
 	public function AddWorshipToMini($mid, $wid){
 		$em = ServiceUtil::getService('doctrine.entitymanager');
 		$worship = $em->find('Miniplan_Entity_Worship', $wid);
+		if(is_array($worship)){
 		
-		$this->miniObj[$mid]->eingeteiltindecrement();
-		$this->miniObj[$mid]->churchindecrement($worship->getCid());
+		    $this->miniObj[$mid]->eingeteiltindecrement();
+		    $this->miniObj[$mid]->churchindecrement($worship->getCid());
 		
 
-		switch($worship->getDay())
-		{
-			case "Sunday":
-				$this->miniObj[$mid]->sundayindecrement();
-				break;
-			case "Saturday":
-				$this->miniObj[$mid]->saturdayindecrement();
-				break;
-			default:
-				$this->miniObj[$mid]->weekdayindecrement();
-		}
+		    switch($worship->getDay())
+		    {
+			    case "Sunday":
+				    $this->miniObj[$mid]->sundayindecrement();
+				    break;
+			    case "Saturday":
+				    $this->miniObj[$mid]->saturdayindecrement();
+				    break;
+			    default:
+				    $this->miniObj[$mid]->weekdayindecrement();
+		    }
+	    }
 	}
 }

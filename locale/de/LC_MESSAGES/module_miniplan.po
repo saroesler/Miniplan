@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zikula 1.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-17 14:32+0100\n"
-"PO-Revision-Date: 2015-03-17 14:34+0100\n"
+"POT-Creation-Date: 2015-03-13 10:25+0100\n"
+"PO-Revision-Date: 2015-03-13 10:25+0100\n"
 "Last-Translator: Sascha Rösler <sa-roelser@t-online.de>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -409,7 +409,7 @@ msgstr "Name"
 msgid "Create the Plan manuelly"
 msgstr "Den Plan manuell erstellen"
 
-#: templates/Admin/ViewPlan.tpl:16 templates/Admin/CreatePlanManuely.tpl:107
+#: templates/Admin/ViewPlan.tpl:16 templates/Admin/CreatePlanManuely.tpl:121
 #: templates/Admin/Address.tpl:38 templates/Admin/passedDates.tpl:91
 msgid "Print"
 msgstr "Drucken"
@@ -433,29 +433,17 @@ msgstr "Als LibreOffice/ OpenOffice downloaden (.odt)"
 msgid "Get the Log- file"
 msgstr "Download der Log-Datei"
 
-#: templates/Admin/CreatePlanManuely.tpl:35
+#: templates/Admin/CreatePlanManuely.tpl:34
 msgid "have to"
 msgstr "muss mit"
 
-#: templates/Admin/CreatePlanManuely.tpl:41
+#: templates/Admin/CreatePlanManuely.tpl:40
 msgid "happy with"
 msgstr "gerne mit"
 
-#: templates/Admin/CreatePlanManuely.tpl:108
+#: templates/Admin/CreatePlanManuely.tpl:121
 msgid "Delete all Devisions!"
 msgstr "Lösche alle Einteilungen!"
-
-#: templates/Admin/CreatePlanManuely.tpl:112
-msgid "Show Statistics!"
-msgstr "Zeige Statistik"
-
-#: templates/Admin/CreatePlanManuely.tpl:113
-msgid "Hide Statistics!"
-msgstr "Verberge Statistik"
-
-#: templates/Admin/CreatePlanManuely.tpl:120
-msgid "All"
-msgstr "Alle"
 
 #: templates/Admin/myData/Header.tpl:7
 msgid "My Calendar"
