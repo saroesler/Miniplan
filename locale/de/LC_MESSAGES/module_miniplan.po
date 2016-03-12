@@ -1,0 +1,1361 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Zikula 1.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-03-13 10:25+0100\n"
+"PO-Revision-Date: 2015-03-13 10:25+0100\n"
+"Last-Translator: Sascha Rösler <sa-roelser@t-online.de>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#: lib/Miniplan/Controller/Admin.php:148
+msgid "Ministrant has been added successfully."
+msgstr "Der Ministrant wurde erfolgreich hinzugefügt."
+
+#: lib/Miniplan/Controller/Admin.php:193
+msgid "Minisrtant has been removed successfully."
+msgstr "Der Ministrant wurde erfolgreich gelöscht."
+
+#: lib/Miniplan/Controller/Admin.php:229
+msgid "The added church has no name."
+msgstr "Die hinzugefügte Kirche hat keinen Namen."
+
+#: lib/Miniplan/Controller/Admin.php:231
+msgid "The church has no adress."
+msgstr "Die Kirche hat keine Adresse"
+
+#: lib/Miniplan/Controller/Admin.php:265
+msgid "Church has been added successfully."
+msgstr "Die Kirche wurde erfolgreich erstellt."
+
+#: lib/Miniplan/Controller/Admin.php:271 lib/Miniplan/Controller/Admin.php:283
+#: lib/Miniplan/Controller/Admin.php:294 lib/Miniplan/Controller/Admin.php:369
+#: lib/Miniplan/Controller/Admin.php:477
+msgid "ID is missing."
+msgstr "Die ID fehlt."
+
+#: lib/Miniplan/Controller/Admin.php:299
+msgid "Church has been removed successfully."
+msgstr "Die Kirche wurde erfolgreich gelöscht."
+
+#: lib/Miniplan/Controller/Admin.php:374
+msgid "Form has been removed successfully."
+msgstr "Die Vorlage wurde erfolgreich gelöscht."
+
+#: lib/Miniplan/Controller/Admin.php:440
+#: lib/Miniplan/Handler/NewWorship.php:105
+msgid "Worship has been added successfully."
+msgstr "Der Gottesdienst wurde erfolgreich erstellt."
+
+#: lib/Miniplan/Controller/Admin.php:501
+msgid "Worship has been removed successfully."
+msgstr "Der Gottesdienst wurde erfolgreich gelöscht."
+
+#: lib/Miniplan/Controller/Admin.php:701 lib/Miniplan/Controller/Admin.php:883
+msgid "Save changes!"
+msgstr "Änderungen wurden gespeichert!"
+
+#: lib/Miniplan/Controller/Admin.php:911
+msgid "Please enter a vaild routine."
+msgstr "Bitte wählen Sie eine Routine."
+
+#: lib/Miniplan/Controller/Ajax.php:21
+msgid "missing $wfid"
+msgstr "es fehlt $wfid"
+
+#: lib/Miniplan/Controller/Ajax.php:54
+msgid "There is no valid name!"
+msgstr "Der Name ist nicht möglich!"
+
+#: lib/Miniplan/Controller/Ajax.php:56
+msgid "There is no valid church!"
+msgstr "Die Kirche ist nicht möglich!"
+
+#: lib/Miniplan/Controller/Ajax.php:58
+msgid "There is no valid number of ministrants!"
+msgstr "Die Anzahl der Ministranten ist nicht möglich!"
+
+#: lib/Miniplan/Controller/Ajax.php:60
+msgid "There is no valid time!"
+msgstr "Die Zeit ist nicht möglich!"
+
+#: lib/Miniplan/Controller/Ajax.php:71 lib/Miniplan/Controller/Ajax.php:95
+#: lib/Miniplan/Controller/Ajax.php:119 lib/Miniplan/Controller/Ajax.php:146
+#: lib/Miniplan/Controller/Ajax.php:176
+msgid "Saved"
+msgstr "Gespeichert"
+
+#: lib/Miniplan/Controller/Ajax.php:87 lib/Miniplan/Controller/Ajax.php:111
+#: lib/Miniplan/Controller/Ajax.php:135 lib/Miniplan/Controller/Ajax.php:163
+#: lib/Miniplan/Controller/Ajax.php:247
+msgid "There is no valid mid!"
+msgstr "Es fehlt eine gültige mid!"
+
+#: lib/Miniplan/Controller/Ajax.php:165
+msgid "There is no valid worship!"
+msgstr "Es gibt keinen gültigen Gottesdienst!"
+
+#: lib/Miniplan/Controller/Ajax.php:229
+msgid "There is no valid id!"
+msgstr "Es fehlt eine gültige Id!"
+
+#: lib/Miniplan/Controller/Ajax.php:249
+msgid "There is no valid wid!"
+msgstr "Es fehlt eine gültige Wid!"
+
+#: lib/Miniplan/Handler/WorshipEdit.php:41
+#, php-format
+msgid "Worship with id %s not found"
+msgstr "Es wurde kein Gottesdienst mit der ID %s gefunden. "
+
+#: lib/Miniplan/Handler/Edit.php:39
+#, php-format
+msgid "Church with id %s not found"
+msgstr "Es wurde keine Kirche mit der ID %s gefunden. "
+
+#: lib/Miniplan/Handler/FormEdit.php:41
+#, php-format
+msgid "form with id %s not found"
+msgstr "Die Vorlage mit der id %s konnte nicht gefunden werden"
+
+#: lib/Miniplan/Version.php:15 lib/Miniplan/Version.php:17
+#: templates/Admin/ViewPlan.tpl:1 templates/Admin/Plan_CreatedError.tpl:10
+#: templates/Admin/CreatePlanManuely.tpl:1 templates/Admin/Plan_Created.tpl:49
+msgid "Miniplan"
+msgstr "Miniplan"
+
+#: lib/Miniplan/Version.php:16
+msgid "Zikula Module creating Ministrantenplans"
+msgstr "Ein Zikulamodul das Ministrantenpläne erstellt"
+
+#: lib/Miniplan/Api/Account.php:34
+msgid "Oberministrant"
+msgstr "Oberminstrant"
+
+#: lib/Miniplan/Api/Account.php:48
+msgid "Ministrant"
+msgstr "Ministrant"
+
+#: lib/Miniplan/Api/Admin.php:19 lib/Miniplan/Api/Admin.php:20
+#: templates/Admin/Main.tpl:1
+msgid "Main"
+msgstr "Hauptseite"
+
+#: lib/Miniplan/Api/Admin.php:27 templates/Admin/Group.tpl:1
+#: templates/Admin/Address.tpl:1
+msgid "Group"
+msgstr "Gruppe"
+
+#: lib/Miniplan/Api/Admin.php:28
+msgid "Show the Acolytes group."
+msgstr "Zeigt die Ministrantengruppe"
+
+#: lib/Miniplan/Api/Admin.php:36 templates/Admin/Requests.tpl:1
+msgid "Requests"
+msgstr "Anfragen"
+
+#: lib/Miniplan/Api/Admin.php:37
+msgid "Show requests for the Acolytes group."
+msgstr "Zeigt die Anfragen für die Ministrantengruppe"
+
+#: lib/Miniplan/Api/Admin.php:44 templates/Admin/settings.tpl:69
+#: templates/Admin/settings.tpl:151 templates/Admin/Church.tpl:1
+msgid "Churches"
+msgstr "Kirchen"
+
+#: lib/Miniplan/Api/Admin.php:45
+msgid "Show the Churches."
+msgstr "Zeigt die Kirchen"
+
+#: lib/Miniplan/Api/Admin.php:51 templates/Admin/Form.tpl:1
+msgid "Forms"
+msgstr "Vorlagen"
+
+#: lib/Miniplan/Api/Admin.php:52
+msgid "Show the Forms."
+msgstr "Zeigt die Vorlagen"
+
+#: lib/Miniplan/Api/Admin.php:58 templates/Admin/Calendar.tpl:1
+#: templates/Admin/worshipEdit.tpl:15 templates/Admin/New_Worship.tpl:51
+msgid "Calendar"
+msgstr "Kalender"
+
+#: lib/Miniplan/Api/Admin.php:59
+msgid "Show the Calendar."
+msgstr "Zeigt den Kalender"
+
+#: lib/Miniplan/Api/Admin.php:65
+msgid "Passed Date"
+msgstr "Abgegebene Termine"
+
+#: lib/Miniplan/Api/Admin.php:66
+msgid "See the Dates, the Ministrants pass."
+msgstr "Zeigt die Termine, die die Minis abgegeben haben"
+
+#: lib/Miniplan/Api/Admin.php:72
+msgid "Created Plan"
+msgstr "Erstellter Plan"
+
+#: lib/Miniplan/Api/Admin.php:73
+msgid "See the created Plan."
+msgstr "Zeigt der erstellten Plan"
+
+#: lib/Miniplan/Api/Admin.php:79 templates/Admin/settings.tpl:1
+#: templates/Admin/settings.tpl:26 templates/Admin/settings.tpl:91
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: lib/Miniplan/Api/Admin.php:80
+msgid "Configure the module."
+msgstr "Konfiguriert das Modul"
+
+#: lib/Miniplan/Api/Admin.php:89
+msgid "My Data"
+msgstr "Meine Daten"
+
+#: lib/Miniplan/Api/Admin.php:90
+msgid "sign in for worships"
+msgstr "für Gottesdienste klicken"
+
+#: lib/Miniplan/Api/Admin.php:96 templates/Admin/Address.tpl:9
+msgid "Address"
+msgstr "Adresse"
+
+#: lib/Miniplan/Api/Admin.php:97
+msgid "get the address list"
+msgstr "Ausgabe der Adressliste"
+
+#: lib/Miniplan/Api/Admin.php:261 lib/Miniplan/Api/Admin.php:280
+msgid "No form selected"
+msgstr "Keine Vorlage ausgewählt"
+
+#: lib/Miniplan/Api/Create.php:16 lib/Miniplan/Api/Create.php:30
+msgid "No routine selected"
+msgstr "Keine Routine ausgewählt"
+
+#: lib/Miniplan/Api/Create.php:18
+msgid "The Vuong'sche Routine"
+msgstr "Die Voung'sche Routine"
+
+#: lib/Miniplan/Api/Create.php:19
+msgid "manually"
+msgstr "Per Hand"
+
+#: lib/Miniplan/Api/Create.php:20
+msgid "get odt"
+msgstr "Ausgabe als Odt"
+
+#: lib/Miniplan/Api/Create.php:21
+msgid "get Data"
+msgstr "Daten ausgeben"
+
+#: lib/Miniplan/Api/Create.php:31
+msgid ""
+"The Vuong- Routine chooses a voluntary acolyte for every worship at first. "
+"If there isn't any voluntary acolyte it chooses an other acolyte by a random "
+"routine. After chosing an acolyte it tests, if the acolyte is not devided in "
+"the last 4 days or the last 4 worships. The random routine selects the "
+"acolyte having the lowest unber of devidings. <br/>After that it looks, if "
+"there is a prtner. If the partner can't ministrate at this worship, both "
+"(partner and acolyte) are removed. If the partner is too for this worship "
+"and partner order is longer than two, the partner will be not devided (This "
+"works, if the partner state is 'have to', too). otherwise they both won't be "
+"devided, too. If there isn't anything of this, the partner will devided. <br/"
+"> The routine don't deals with devidings to churches or dates."
+msgstr ""
+"Die Vuong'sche Routine  sucht sich für jeden Gottesdienst zuerst freiwillige "
+"Minis. Wenn es keine gibt, werden zufällige Minis eingeteilt, wobei die, die "
+"noch nicht so oft eingeteilt wurden zuerst dran sind. Bei allen Minis wird "
+"geprüft, ob sie können und ob sie innerhalt der letzten 4 Gottesdienst oder "
+"der letzten 4 Tage eingeteilt wurden. <br/> Anschließend wird geschaut, ob "
+"der Ministrant eine Partner hat. Wenn der Partner nicht kann, werden beide "
+"(der Partner und der Ministrant) nicht eingeteilt. Sollte der Partner auch "
+"können, so wird geschaut, ob noch Minis benötigt werden. Sollte nicht genug "
+"Platz sein, so wird geschaut, wie lang die Partnerkette ist. Ist sie länger "
+"als zwei, so wird  der Partner nicht eingeteilt (Dies geschieht auch, wenn "
+"es ein 'muss' Partner ist). Ansonsten werden beide eingeteilt. <br/> Die "
+"Routine beachtet nicht die Häufigkeit, wie oft ein Ministant schon in einer "
+"bestimmten Kirche oder einem Tag ministriert."
+
+#: lib/Miniplan/Api/Create.php:32 templates/Admin/createDesciption/vuong.tpl:6
+msgid "Please notice"
+msgstr "Bitte Beachten:"
+
+#: lib/Miniplan/Api/Create.php:33 templates/Admin/createDesciption/vuong.tpl:8
+msgid ""
+"Partners who have always ministrate together, both must specify each other. "
+"Otherwise it may happen that those one who has stated that he has to "
+"ministrate with his partner, is not divided."
+msgstr ""
+"Partner, die immer zusammen eingeteilt werden müssen, sollten sich beide "
+"gegenseitig wählen. Ansonsten kann es passieren, dass der Ministrant, der "
+"den Partner eingetragen hat, nicht eingeteilt wird. "
+
+#: lib/Miniplan/Api/Create.php:34 templates/Admin/createDesciption/vuong.tpl:9
+msgid ""
+"Ministrants only having time at the first worships, should be marked as "
+"\"voluntary\", otherwise it my happen that he isn't devided."
+msgstr ""
+"Ministranten, die nur in den ersten Gottesdienste können, sollten diese als "
+"\"freiwillig\" markieren, sonst kann es passieren, dass sie nicht eingeteilt "
+"werden."
+
+#: lib/Miniplan/Api/Create.php:37
+msgid "Get the page to create the plan by yourself"
+msgstr ""
+"Hier bekommen Sie die Seite, auf der Sie den Plan per Hand erstellen können."
+
+#: lib/Miniplan/Api/Create.php:38
+msgid "Get the created plan as odt- file."
+msgstr "Gibt den erstellten Plan als .odt aus."
+
+#: lib/Miniplan/Api/Create.php:39
+msgid "Get the data as a Exel- output to create a plan manuelly."
+msgstr "Die Daten in eine Exeltabelle exportieren"
+
+#: templates/Admin/ChurchEdit.tpl:1
+msgid "Editor"
+msgstr "Editor"
+
+#: templates/Admin/ChurchEdit.tpl:4
+msgid "Church Editor"
+msgstr "Kircheneditor"
+
+#: templates/Admin/ChurchEdit.tpl:9
+msgid "Title"
+msgstr "Titel"
+
+#: templates/Admin/ChurchEdit.tpl:12
+msgid "Shortname"
+msgstr "Spitzname"
+
+#: templates/Admin/ChurchEdit.tpl:15 templates/Admin/Church.tpl:10
+msgid "Adress"
+msgstr "Adresse"
+
+#: templates/Admin/ChurchEdit.tpl:38 templates/Admin/myData/My_Address.tpl:69
+#: templates/Admin/settings.tpl:169 templates/Admin/worshipEdit.tpl:51
+#: templates/Admin/FormEdit.tpl:28 templates/Admin/New_Worship.tpl:87
+msgid "Save"
+msgstr "Speichern"
+
+#: templates/Admin/ChurchEdit.tpl:39 templates/Admin/myData/My_Address.tpl:70
+#: templates/Admin/settings.tpl:170 templates/Admin/worshipEdit.tpl:52
+#: templates/Admin/FormEdit.tpl:29 templates/Admin/New_Worship.tpl:88
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: templates/Admin/Calendar.tpl:2 templates/Admin/passedDates.tpl:3
+#: templates/Admin/quick_input.tpl:4
+msgid "create new worship"
+msgstr "erstelle neue Gottesdienste"
+
+#: templates/Admin/Calendar.tpl:9 templates/Admin/Requests.tpl:7
+#: templates/Admin/Group.tpl:6 templates/Admin/Form.tpl:9
+#: templates/Admin/Church.tpl:7 templates/Admin/passedDates.tpl:16
+#: templates/Admin/quick_input.tpl:17
+msgid "ID"
+msgstr "ID"
+
+#: templates/Admin/Calendar.tpl:10 templates/Admin/myData/My_Calendar.tpl:275
+#: templates/Admin/passedDates.tpl:17 templates/Admin/quick_input.tpl:18
+#: templates/Admin/New_Worship.tpl:81
+msgid "Date"
+msgstr "Datum"
+
+#: templates/Admin/Calendar.tpl:11 templates/Admin/myData/My_Calendar.tpl:276
+#: templates/Admin/Form.tpl:11 templates/Admin/passedDates.tpl:18
+#: templates/Admin/quick_input.tpl:19
+msgid "Time"
+msgstr "Zeit"
+
+#: templates/Admin/Calendar.tpl:12 templates/Admin/myData/My_Calendar.tpl:277
+#: templates/Admin/Form.tpl:12 templates/Admin/passedDates.tpl:19
+#: templates/Admin/quick_input.tpl:20
+msgid "Church"
+msgstr "Kirche"
+
+#: templates/Admin/Calendar.tpl:13 templates/Admin/Form.tpl:13
+#: templates/Admin/passedDates.tpl:20 templates/Admin/quick_input.tpl:21
+msgid "Ministrants"
+msgstr "Ministranten"
+
+#: templates/Admin/Calendar.tpl:14 templates/Admin/myData/My_Calendar.tpl:278
+#: templates/Admin/Form.tpl:14 templates/Admin/passedDates.tpl:21
+#: templates/Admin/quick_input.tpl:22
+msgid "Info"
+msgstr "Informationen"
+
+#: templates/Admin/Calendar.tpl:35
+msgid "Delete all worships"
+msgstr "Lösche alle Gottesdienste"
+
+#: templates/Admin/Requests.tpl:8 templates/Admin/Group.tpl:7
+#: templates/Admin/Form.tpl:10 templates/Admin/Address.tpl:7
+#: templates/Admin/Church.tpl:8
+msgid "Name"
+msgstr "Name"
+
+#: templates/Admin/ViewPlan.tpl:15
+msgid "Create the Plan manuelly"
+msgstr "Den Plan manuell erstellen"
+
+#: templates/Admin/ViewPlan.tpl:16 templates/Admin/CreatePlanManuely.tpl:121
+#: templates/Admin/Address.tpl:38 templates/Admin/passedDates.tpl:91
+msgid "Print"
+msgstr "Drucken"
+
+#: templates/Admin/Plan_CreatedError.tpl:12
+msgid "Miniplan creation failes"
+msgstr "Die Erstellung des Miniplans schlug fehl!"
+
+#: templates/Admin/Plan_CreatedError.tpl:15
+#: templates/Admin/Plan_Created.tpl:62
+msgid "Error and Warnings"
+msgstr "Fehler und Warnungen"
+
+#: templates/Admin/Plan_CreatedError.tpl:21
+#: templates/Admin/Plan_Created.tpl:73 templates/Admin/Plan_Created.tpl:78
+msgid "Get it as an LibreOffice/ OpenOffice- Document (.odt)"
+msgstr "Als LibreOffice/ OpenOffice downloaden (.odt)"
+
+#: templates/Admin/Plan_CreatedError.tpl:25
+#: templates/Admin/Plan_Created.tpl:86
+msgid "Get the Log- file"
+msgstr "Download der Log-Datei"
+
+#: templates/Admin/CreatePlanManuely.tpl:34
+msgid "have to"
+msgstr "muss mit"
+
+#: templates/Admin/CreatePlanManuely.tpl:40
+msgid "happy with"
+msgstr "gerne mit"
+
+#: templates/Admin/CreatePlanManuely.tpl:121
+msgid "Delete all Devisions!"
+msgstr "Lösche alle Einteilungen!"
+
+#: templates/Admin/myData/Header.tpl:7
+msgid "My Calendar"
+msgstr "Mein Kalender"
+
+#: templates/Admin/myData/Header.tpl:9
+msgid "My Address"
+msgstr "Meine Adresse"
+
+#: templates/Admin/myData/My_Address.tpl:15
+msgid "my Address"
+msgstr "Meine Adresse"
+
+#: templates/Admin/myData/My_Address.tpl:16
+#: templates/Admin/myData/My_Calendar.tpl:110
+msgid "Welcome"
+msgstr "Willkommen"
+
+#: templates/Admin/myData/My_Address.tpl:18
+msgid "On this page you can input your Address."
+msgstr "Hier können Sie Ihre Adressdaten eingeben."
+
+#: templates/Admin/myData/My_Address.tpl:23
+msgid "First Name:"
+msgstr "Vorname:"
+
+#: templates/Admin/myData/My_Address.tpl:27
+msgid "Name:"
+msgstr "Name:"
+
+#: templates/Admin/myData/My_Address.tpl:31
+msgid "Street:"
+msgstr "Adresse:"
+
+#: templates/Admin/myData/My_Address.tpl:35
+msgid "Town:"
+msgstr "Ort:"
+
+#: templates/Admin/myData/My_Address.tpl:39
+msgid "PLZ:"
+msgstr "PLZ:"
+
+#: templates/Admin/myData/My_Address.tpl:43
+msgid "Birthday:"
+msgstr "Geburtstag:"
+
+#: templates/Admin/myData/My_Address.tpl:48
+msgid "Telephone:"
+msgstr "Telefon:"
+
+#: templates/Admin/myData/My_Address.tpl:52
+msgid "Mobile:"
+msgstr "Mobil:"
+
+#: templates/Admin/myData/My_Address.tpl:56
+msgid "Parent Mobile:"
+msgstr "Eltern Mobil:"
+
+#: templates/Admin/myData/My_Address.tpl:60
+#: templates/Admin/myData/My_Address.tpl:64
+msgid "e-Mail:"
+msgstr "e-Mail:"
+
+#: templates/Admin/myData/My_Calendar.tpl:109
+msgid "my Calendar"
+msgstr "mein Kalender"
+
+#: templates/Admin/myData/My_Calendar.tpl:117
+msgid "Admin Settings"
+msgstr "Admin Einstellungen"
+
+#: templates/Admin/myData/My_Calendar.tpl:118
+msgid ""
+"In this category you can allowed this ministrant to set global variables."
+msgstr ""
+"in dieser Kategory können globale variablen Ministranten erlaubt werden"
+
+#: templates/Admin/myData/My_Calendar.tpl:119
+#: templates/Admin/myData/My_Calendar.tpl:199
+msgid "for all:"
+msgstr "für alle:"
+
+#: templates/Admin/myData/My_Calendar.tpl:121
+#: templates/Admin/myData/My_Calendar.tpl:123 templates/Admin/settings.tpl:29
+#: templates/Admin/settings.tpl:94
+msgid "allowed to be an inactive ministrant"
+msgstr "erlauben eine inactiver  Ministrant zu sein"
+
+#: templates/Admin/myData/My_Calendar.tpl:127
+#: templates/Admin/myData/My_Calendar.tpl:208
+msgid "for Weekdays:"
+msgstr "für Wochentage"
+
+#: templates/Admin/myData/My_Calendar.tpl:133
+msgid "allowed to set globals for Monday"
+msgstr "Globale Variablen für Montag erlauben"
+
+#: templates/Admin/myData/My_Calendar.tpl:140
+msgid "allowed to set globals for Tuesday"
+msgstr "Globale Variablen für Dienstag erlauben"
+
+#: templates/Admin/myData/My_Calendar.tpl:147
+msgid "allowed to set globals for Wednesday"
+msgstr "Globale Variablen für Mittwoch erlauben"
+
+#: templates/Admin/myData/My_Calendar.tpl:154
+msgid "allowed to set globals for Thursday"
+msgstr "Globale Variablen für Donnerstag erlauben"
+
+#: templates/Admin/myData/My_Calendar.tpl:161
+msgid "allowed to set globals for Friday"
+msgstr "Globale Variablen für Freitag erlauben"
+
+#: templates/Admin/myData/My_Calendar.tpl:168
+msgid "allowed to set globals for Saturday"
+msgstr "Globale Variablen für Samstag erlauben"
+
+#: templates/Admin/myData/My_Calendar.tpl:175
+msgid "allowed to set globals for Sunday"
+msgstr "Globale Variablen für Sonntag erlauben"
+
+#: templates/Admin/myData/My_Calendar.tpl:178
+#: templates/Admin/myData/My_Calendar.tpl:246
+msgid "for Churches"
+msgstr "für Kirchen"
+
+#: templates/Admin/myData/My_Calendar.tpl:189 templates/Admin/settings.tpl:76
+#: templates/Admin/settings.tpl:158
+#, php-format
+msgid "allowed to change %s"
+msgstr "erlauben, %s zu ändern"
+
+#: templates/Admin/myData/My_Calendar.tpl:196
+msgid "General Settings"
+msgstr "Einstellungen"
+
+#: templates/Admin/myData/My_Calendar.tpl:197
+msgid "In this category you can set global settings."
+msgstr "In dieser Kategory können Sie globale Einstellungen einstellen."
+
+#: templates/Admin/myData/My_Calendar.tpl:201
+#: templates/Admin/myData/My_Calendar.tpl:203
+msgid "be an inactive ministrant"
+msgstr "ein inactiver Ministrant sein"
+
+#: templates/Admin/myData/My_Calendar.tpl:211
+msgid "on Monday"
+msgstr "am Montag"
+
+#: templates/Admin/myData/My_Calendar.tpl:216
+msgid "on Tuesday"
+msgstr "am Dienstag"
+
+#: templates/Admin/myData/My_Calendar.tpl:221
+msgid "on Wednesday"
+msgstr "am Mittwoch"
+
+#: templates/Admin/myData/My_Calendar.tpl:226
+msgid "on Thursday"
+msgstr "am Donnerstag"
+
+#: templates/Admin/myData/My_Calendar.tpl:232
+msgid "on Friday"
+msgstr "am Freitag"
+
+#: templates/Admin/myData/My_Calendar.tpl:237
+msgid "on Saturday"
+msgstr "am Samstag"
+
+#: templates/Admin/myData/My_Calendar.tpl:242
+msgid "on Sunday"
+msgstr "am Sonntag"
+
+#: templates/Admin/myData/My_Calendar.tpl:254
+#, php-format
+msgid "in %s"
+msgstr "in %s"
+
+#: templates/Admin/myData/My_Calendar.tpl:259 templates/Admin/Group.tpl:8
+msgid "Nicname"
+msgstr "Spitzname"
+
+#: templates/Admin/myData/My_Calendar.tpl:262
+msgid "choose a partner"
+msgstr "wähle einen Partner"
+
+#: templates/Admin/myData/My_Calendar.tpl:263
+msgid "please"
+msgstr "Bitte"
+
+#: templates/Admin/myData/My_Calendar.tpl:265
+#: templates/Admin/passedDates.tpl:9 templates/Admin/passedDates.tpl:44
+#: templates/Admin/passedDates.tpl:71 templates/Admin/quick_input.tpl:10
+#: templates/Admin/quick_input.tpl:44 templates/Admin/quick_input.tpl:52
+msgid "like"
+msgstr "gerne"
+
+#: templates/Admin/myData/My_Calendar.tpl:266
+#: templates/Admin/passedDates.tpl:44 templates/Admin/quick_input.tpl:45
+#: templates/Admin/quick_input.tpl:52
+msgid "always"
+msgstr "immer"
+
+#: templates/Admin/myData/My_Calendar.tpl:268
+#: templates/Admin/passedDates.tpl:44 templates/Admin/quick_input.tpl:48
+#: templates/Admin/quick_input.tpl:52
+msgid "with"
+msgstr "mit"
+
+#: templates/Admin/myData/My_Calendar.tpl:268
+#: templates/Admin/quick_input.tpl:48
+msgid "divide"
+msgstr "einteilen"
+
+#: templates/Admin/myData/My_Calendar.tpl:271
+msgid "Worships"
+msgstr "Gottesdienste"
+
+#: templates/Admin/myData/My_Calendar.tpl:310
+msgid "save"
+msgstr "speichern"
+
+#: templates/Admin/myData/My_Calendar.tpl:311
+msgid "aborte"
+msgstr "abbrechen"
+
+#: templates/Admin/settings.tpl:21
+msgid "set start value for new ministrant"
+msgstr "Einstellungen für neue Ministranten"
+
+#: templates/Admin/settings.tpl:35 templates/Admin/settings.tpl:103
+msgid "Weekday"
+msgstr "Wochentag"
+
+#: templates/Admin/settings.tpl:38 templates/Admin/settings.tpl:106
+msgid "allowed to change Monday"
+msgstr "erlauben, Montag zu ändern"
+
+#: templates/Admin/settings.tpl:42 templates/Admin/settings.tpl:112
+msgid "allowed to change Tuesday"
+msgstr "erlauben, Dienstag zu ändern"
+
+#: templates/Admin/settings.tpl:46 templates/Admin/settings.tpl:118
+msgid "allowed to change Wednesday"
+msgstr "erlauben, Mittwoch zu ändern"
+
+#: templates/Admin/settings.tpl:50 templates/Admin/settings.tpl:124
+msgid "allowed to change Thursday"
+msgstr "erlauben, Donnerstag zu ändern"
+
+#: templates/Admin/settings.tpl:54 templates/Admin/settings.tpl:130
+msgid "allowed to change Friday"
+msgstr "erlauben, Freitag zu ändern"
+
+#: templates/Admin/settings.tpl:58 templates/Admin/settings.tpl:136
+msgid "allowed to change Saturday"
+msgstr "erlauben, Samstag zu ändern"
+
+#: templates/Admin/settings.tpl:62 templates/Admin/settings.tpl:142
+msgid "allowed to change Sunday"
+msgstr "erlauben, Sonntag zu ändern"
+
+#: templates/Admin/settings.tpl:82
+msgid "set start value for new church"
+msgstr "Einstellungen für neue Kirche"
+
+#: templates/Admin/settings.tpl:85
+msgid "set new churches to allowed- state"
+msgstr "setzt neue Kirche zu \"Erlaubt\""
+
+#: templates/Admin/settings.tpl:88
+msgid "set value for ministrants"
+msgstr "Einstellungen für Ministranten"
+
+#: templates/Admin/settings.tpl:89
+msgid ""
+"If you choose 'reset', all ministrans get the state not allowed for this "
+"category. Even if previously allowed and seted by the user!"
+msgstr ""
+"Wenn 'Zurücksetzten' gewählt wird, bekommen alle Minis in der jewiligen "
+"Kategori 'Nicht erlaubt'. Dies geschieht auch, wenn es vorher erlaubt wurde "
+"und wenn der Benutzer die Einstellung benutzt. Diese wird dann überschrieben."
+
+#: templates/Admin/settings.tpl:96
+msgid "reset inactive state for every mini"
+msgstr "Zurücksetzten Inactiv- Status für jeden Mini"
+
+#: templates/Admin/settings.tpl:108
+msgid "reset Monday state for every mini"
+msgstr "Zurücksetzten Montag für alle Minis"
+
+#: templates/Admin/settings.tpl:114
+msgid "reset Tuesday state for every mini"
+msgstr "Zurücksetzten Dienstag für alle Minis"
+
+#: templates/Admin/settings.tpl:120
+msgid "reset Wednesday state for every mini"
+msgstr "Zurücksetzten Wittwoch für alle Minis"
+
+#: templates/Admin/settings.tpl:126
+msgid "reset Thursday state for every mini"
+msgstr "Zurücksetzten Donnerstag für alle Minis"
+
+#: templates/Admin/settings.tpl:132
+msgid "reset Friday state for every mini"
+msgstr "Zurücksetzten Freitag für alle Minis"
+
+#: templates/Admin/settings.tpl:138
+msgid "reset Saturday state for every mini"
+msgstr "Zurücksetzten Samstag für alle Minis"
+
+#: templates/Admin/settings.tpl:144
+msgid "reset Sunday state for every mini"
+msgstr "Zurücksetzten Sonntag für alle Minis"
+
+#: templates/Admin/settings.tpl:162
+#, php-format
+msgid "reset %s state for every mini"
+msgstr "Zurücksetzten des %s - Status für jeden Ministranten"
+
+#: templates/Admin/Main.tpl:21
+msgid "There are minis, their passed dates are not controlled."
+msgstr "Bei einigen Minis wurden die Termine noch nicht kontrolliert."
+
+#: templates/Admin/Main.tpl:24
+msgid "Create a Miniplan"
+msgstr "Miniplan erstellen"
+
+#: templates/Admin/Main.tpl:27
+msgid "choose a routine:"
+msgstr "wählen Sie eine Routine"
+
+#: templates/Admin/Main.tpl:31
+msgid "Description"
+msgstr "Beschreibung"
+
+#: templates/Admin/Main.tpl:39
+msgid "create plan now!"
+msgstr "Ministrantenplan jetzt erstellen!"
+
+#: templates/Admin/worshipEdit.tpl:19 templates/Admin/New_Worship.tpl:55
+msgid "Form:"
+msgstr "Vorlage:"
+
+#: templates/Admin/worshipEdit.tpl:23 templates/Admin/FormEdit.tpl:10
+#: templates/Admin/New_Worship.tpl:59
+msgid "Church:"
+msgstr "Kirche:"
+
+#: templates/Admin/worshipEdit.tpl:27 templates/Admin/FormEdit.tpl:14
+#: templates/Admin/New_Worship.tpl:63
+msgid "Time:"
+msgstr "Zeit:"
+
+#: templates/Admin/worshipEdit.tpl:31 templates/Admin/FormEdit.tpl:18
+#: templates/Admin/New_Worship.tpl:67
+msgid "Who many ministrants are reqested?"
+msgstr "Wie viele Ministranten werden benötigt?"
+
+#: templates/Admin/worshipEdit.tpl:33 templates/Admin/FormEdit.tpl:20
+#: templates/Admin/New_Worship.tpl:69
+msgid "If you put in an 0, it is an voluntarily worship."
+msgstr "Wenn Sie eine 0 eingeben, ist es ein freiwilliger Gottesdienst"
+
+#: templates/Admin/worshipEdit.tpl:36 templates/Admin/FormEdit.tpl:23
+#: templates/Admin/New_Worship.tpl:72
+msgid "Infos:"
+msgstr "Informationen"
+
+#: templates/Admin/worshipEdit.tpl:44
+msgid "Date:"
+msgstr "Datum:"
+
+#: templates/Admin/Form.tpl:2
+msgid "create new form"
+msgstr "erstelle neue Vorlage"
+
+#: templates/Admin/Address.tpl:6
+msgid "Nr"
+msgstr "Nr"
+
+#: templates/Admin/Address.tpl:8
+msgid "First Name"
+msgstr "Vorname"
+
+#: templates/Admin/Address.tpl:10
+msgid "Place"
+msgstr "Ort"
+
+#: templates/Admin/Address.tpl:11
+msgid "PLZ"
+msgstr "PLZ"
+
+#: templates/Admin/Address.tpl:12
+msgid "Birthday"
+msgstr "Geburtstag"
+
+#: templates/Admin/Address.tpl:13
+msgid "Telephone"
+msgstr "Telefon"
+
+#: templates/Admin/Address.tpl:14
+msgid "Mobile"
+msgstr "Mobil"
+
+#: templates/Admin/Address.tpl:15
+msgid "Parent Mobile"
+msgstr "Eltern Mobil"
+
+#: templates/Admin/Address.tpl:16
+msgid "e-Mail"
+msgstr "e-Mail"
+
+#: templates/Admin/Church.tpl:9
+msgid "ShortName"
+msgstr "Spitzname"
+
+#: templates/Admin/passedDates.tpl:1
+msgid "Passed Dates"
+msgstr "Abgegebene Termine"
+
+#: templates/Admin/passedDates.tpl:7 templates/Admin/passedDates.tpl:68
+#: templates/Admin/quick_input.tpl:8
+msgid "not devide"
+msgstr "nicht einteilen"
+
+#: templates/Admin/passedDates.tpl:8 templates/Admin/passedDates.tpl:74
+#: templates/Admin/quick_input.tpl:9
+msgid "devide"
+msgstr "einteilen"
+
+#: templates/Admin/passedDates.tpl:60 templates/Admin/quick_input.tpl:66
+msgid "voluntary"
+msgstr "freiwillig"
+
+#: templates/Admin/passedDates.tpl:90 templates/Admin/quick_input.tpl:1
+msgid "Quick Input"
+msgstr "Schnelleingabe"
+
+#: templates/Admin/Plan_Created.tpl:53
+msgid "Miniplan created successfully. There is a Warning!"
+msgstr "Der Ministrantenplan wurde erfolgreich erstellt. Es gibt eine Warnung!"
+
+#: templates/Admin/Plan_Created.tpl:57
+msgid "Miniplan created successfully"
+msgstr "Der Ministrantenplan wurde erfolgreich erstellt"
+
+#: templates/Admin/Plan_Created.tpl:64
+msgid "There are no Error or Warnings!"
+msgstr "Es war alles fehlerfrei!"
+
+#: templates/Admin/Plan_Created.tpl:83
+msgid "Get LibreOffice to read the plan!"
+msgstr "LibreOffice Download um den Plan zu lesen"
+
+#: templates/Admin/Plan_Created.tpl:92
+msgid "Allocation"
+msgstr "Belegung"
+
+#: templates/Admin/Plan_Created.tpl:108
+msgid "standard deviation"
+msgstr "Standardabweichung"
+
+#: templates/Admin/Plan_Created.tpl:112
+msgid "Log File"
+msgstr "Log Daten"
+
+#: templates/Admin/FormEdit.tpl:1
+msgid "Form Edit"
+msgstr "Vorlage bearbeiten"
+
+#: templates/Admin/FormEdit.tpl:4
+msgid "Edit form"
+msgstr "Vorlage bearbeiten"
+
+#: templates/Admin/FormEdit.tpl:6
+msgid "Formname:"
+msgstr "Vorlagenname"
+
+#: templates/Admin/New_Worship.tpl:75
+msgid "Name for this form"
+msgstr "Der Name für diese Vorlage"
+
+#: templates/Admin/New_Worship.tpl:75
+msgid "New Form"
+msgstr "Neue Vorlage"
+
+#: templates/Admin/New_Worship.tpl:75
+msgid "save form"
+msgstr "Vorlage speichern"
+
+#~ msgid "This function is not implementated."
+#~ msgstr "Diese Funktion ist noch nicht verfügbar."
+
+#, fuzzy
+#~ msgid "Edit"
+#~ msgstr "Editor"
+
+#~ msgid "There is no valid partner!"
+#~ msgstr "Es gibt keinen gültigen Partner!"
+
+#~ msgid "set start value"
+#~ msgstr "setzt start Eingabe"
+
+#~ msgid "allowed to change Thusday"
+#~ msgstr "erlauben, Dienstag zu ändern"
+
+#~ msgid "allowed to change"
+#~ msgstr "Änderung erlauben"
+
+#~ msgid "Voung'sche Routine"
+#~ msgstr "Voung'sche Routine"
+
+#~ msgid "virtual Ministrant"
+#~ msgstr "virtueller Ministrant"
+
+#~ msgid "If you put in an 0, it is an voluntarily form."
+#~ msgstr "Wenn Sie eine 0 eingeben, ist es ein freiwillige Vorlage"
+
+#~ msgid "All pages"
+#~ msgstr "Alle Seiten"
+
+#~ msgid "Admin page"
+#~ msgstr "Administrationsseite"
+
+#~ msgid "Last update:"
+#~ msgstr "Stand: "
+
+#~ msgid "Could not find a site with this id!"
+#~ msgstr "Die Seite mit dieser ID konnte nicht gefunden werden!"
+
+#~ msgid "Page Zensor"
+#~ msgstr "Page Zensor"
+
+#~ msgid ""
+#~ "Page module with confirmation of every site by an administrator of the "
+#~ "pages"
+#~ msgstr ""
+#~ "Seitenmodul mit Freigabe jeder Seitenänderung von den Adminstratoren "
+#~ "dieser Seite."
+
+#~ msgid "PageZensor"
+#~ msgstr "PageZensor"
+
+#~ msgid "pagezensor edit_page Hooks"
+#~ msgstr "pagezensor edit_page Hooks"
+
+#~ msgid "Page Manager"
+#~ msgstr "Seitenverwaltung"
+
+#~ msgid "Add and delete pages"
+#~ msgstr "Erstellen und löschen Sie Seiten."
+
+#~ msgid "Little HTLM- School"
+#~ msgstr "Kleine HTLM- Schule"
+
+#~ msgid "Learn HTML, to edit pages professionally"
+#~ msgstr ""
+#~ "Lernen Sie ein bisschen HTML, um Ihre Seiten professionell zu bearbeiten."
+
+#~ msgid "Help"
+#~ msgstr "Hilfe"
+
+#~ msgid "Page creation"
+#~ msgstr "Seitenerstellung"
+
+#~ msgid "Please write the editor something about his problems."
+#~ msgstr ""
+#~ "Bitte schreiben Sie dem Verfasser, warum diese Änderungen nicht "
+#~ "veröffentlicht werden können."
+
+#~ msgid "Edit Display"
+#~ msgstr "Vorschau"
+
+#~ msgid "The Editor wrote about his changes:"
+#~ msgstr "Der Verfasser schreibt follgendes über seine Änderungen:"
+
+#~ msgid "The changes couldn't published because of this:"
+#~ msgstr ""
+#~ "Die Änderungen können aus follgenden Gründen nicht übernommen werden."
+
+#~ msgid "Confirm"
+#~ msgstr "Bestätigen"
+
+#~ msgid "Refuse"
+#~ msgstr "Abweisen"
+
+#~ msgid "Little HTML- School"
+#~ msgstr "Kleine HTML- Schule"
+
+#~ msgid ""
+#~ "This modul work with HTML- Tags. To write a text in a right format, you "
+#~ "have to use HTML. Here is a schor overview of the general HTML-Tags."
+#~ msgstr ""
+#~ "Dieses Modul arbeitet mit HTML- Tags. Um den Text richtig zu formatieren, "
+#~ "müssen Sie HTML nutzen. Hier ist ein kleiner Überblick über die einfachen "
+#~ "HTML- Tags. "
+
+#~ msgid "Title:"
+#~ msgstr "Titel:"
+
+#~ msgid ""
+#~ "There is a hierarchy of titles. You can use highest title by writing '&lt;"
+#~ "h1>'Here is my text'&lt;/h1>'. Lower title are created with &lt;h2> and "
+#~ "so on."
+#~ msgstr ""
+#~ "Es gibt eine Hirarchie der Titel. Um ein Haupttitel zu ersetllen nutzen "
+#~ "Sie follgenden Tag:  '&lt;h1>'Mein Titel'&lt;/h1>'. Unwichtigere Titel "
+#~ "werden mit &lt;h2> und so weiter erstellt."
+
+#~ msgid "Text:"
+#~ msgstr "Text:"
+
+#~ msgid ""
+#~ "To write your text HTML- comformely you have to use a &lt;p> Tag. You use "
+#~ "it like this:'&lt;p>My Text&lt;/p>'"
+#~ msgstr ""
+#~ "Um den Text HTML- konform zu schreiben benutzen Sie den  &lt;p>  Tag. "
+#~ "Dies sieht dann so aus: '&lt;p>Mein Text&lt;/p>'"
+
+#~ msgid "Wordwrap"
+#~ msgstr "Zeilenumbruch"
+
+#~ msgid "To get an new Line you have to use this tag: '&lt;br/>'."
+#~ msgstr ""
+#~ "Um einen Zeilenumbruch zu erhalten nutzen Sie diesen Tag:  '&lt;br/>'."
+
+#~ msgid "Design a text"
+#~ msgstr "Textgestaltung"
+
+#~ msgid "To design the text, you can use following Tags:"
+#~ msgstr "Um eine Text zu gestalten nutzen Sie follgenden Tags:"
+
+#~ msgid "Bold"
+#~ msgstr "Fett"
+
+#~ msgid "To make your text boldly, you use this tag:'&lt;b>Bold Text&lt;/b>'"
+#~ msgstr ""
+#~ "Um einen Text fett zu machen nutzten Sie diesen Tag: '&lt;b>Fetter "
+#~ "Text&lt;/b>'"
+
+#~ msgid "Italic"
+#~ msgstr "Kusiv"
+
+#~ msgid ""
+#~ "To make your text italicly, you use this tag:'&lt;i>Italic Text&lt;/i>'"
+#~ msgstr ""
+#~ "Um einen Text kusiv zu schreiben nutzen Sie diesen Tag:'&lt;i>Kusiver "
+#~ "Text&lt;/i>'"
+
+#~ msgid "Underline"
+#~ msgstr "Unterstreichen"
+
+#~ msgid ""
+#~ "To unterline your text, you use this tag:'&lt;u>Underlied Text&lt;/u>'"
+#~ msgstr ""
+#~ "Um einen Text zu unterstreichen nutzen Sie follgenden Tag: '&lt;"
+#~ "u>Unterstrichender Text&lt;/u>'"
+
+#~ msgid "Structure a text"
+#~ msgstr "Textstrukturierung"
+
+#~ msgid "To structure the text, you can use following Tags:"
+#~ msgstr "Um den Text zu srtukturieren können Sie diese Tags nutzen: "
+
+#~ msgid "List with dots"
+#~ msgstr "Liste mit Punkten"
+
+#~ msgid ""
+#~ "To create a list with dots you can use this tag:'&lt;ul>&lt;li>Text in "
+#~ "list&lt;/li>&lt;/ul>'. To create more then one list entry you use the &lt;"
+#~ "li> tags more the one time."
+#~ msgstr ""
+#~ "Um eine Liste zu erstellen nutzen Sie diese Tags:  '&lt;ul>&lt;li>Text in "
+#~ "der Liste&lt;/li>&lt;/ul>'. Wenn Sie mehr als einen Eintrag benötigen, "
+#~ "widerholen Sie die &lt;li> Tags."
+
+#~ msgid "List with numbering"
+#~ msgstr "Aufzählungen"
+
+#~ msgid ""
+#~ "To create a list with numbering you can use this tag:'&lt;ol>&lt;li>Text "
+#~ "in list&lt;/li>&lt;/ol>'. To create more then one list entry you use the "
+#~ "&lt;li> tags more the one time."
+#~ msgstr ""
+#~ "Um eine Aufzählung zu erstellen, können Sie follgenden Tag nutzen: '&lt;"
+#~ "ol>&lt;li>Text in der Aufzählung&lt;/li>&lt;/ol>'. Um mehr als nur einen "
+#~ "Eintrag zu bekommen, widerholen Sie die &lt;li> Tags."
+
+#~ msgid "Table"
+#~ msgstr "Tabelle"
+
+#~ msgid ""
+#~ "To create a table you can use this tag:'&lt;table>&lt;tr>&lt;th>Title of "
+#~ "th column&lt;/th>&lt;td>Text in one cell&lt;/td>&lt;/tr>&lt;/table>'. To "
+#~ "create more then one row you use the &lt;tr> tags more the one time. To "
+#~ "create more then one column you use the &lt;th> / &lt;td> tags more the "
+#~ "one time in each row."
+#~ msgstr ""
+#~ "Um eine Tabelle zu erstellen nutzen Sie follgeden Tag- Folge: '&lt;"
+#~ "table>&lt;tr>&lt;th>Titel der Zeile&lt;/th>&lt;td>Text in einer Zelle&lt;/"
+#~ "td>&lt;/tr>&lt;/table>'.Um mehrere Zeilen zu erzeugen, widerholen Sie "
+#~ "die  &lt;tr> Tags. Um mehrere Spalten zu erzeugen, verwenden Sie mehrere "
+#~ "&lt;th> / &lt;td> Tags in einer Zeile. "
+
+#~ msgid "Deviding line"
+#~ msgstr "Trennlinie"
+
+#~ msgid "To create a deviding line you use this tag: '&lt;hr/>'."
+#~ msgstr "Mit  '&lt;hr/>' erstellen Sie eine Trennlinie."
+
+#~ msgid "Hyperlink"
+#~ msgstr "Link"
+
+#~ msgid ""
+#~ "To create a hyperlink you use this tag: &lt;a href=\"path to the site"
+#~ "\">the title, you show the sites visitor&lt;/a>"
+#~ msgstr ""
+#~ "Um einen Hyperlink zu erstellen nutzen Sie follgenden Tag: &lt;a href="
+#~ "\"URL der Seite\">Anzeigetext&lt;/a>"
+
+#~ msgid "Picture"
+#~ msgstr "Bilder"
+
+#~ msgid ""
+#~ "To include an picturein your site, you do it like this: &lt;p>&lt;img src="
+#~ "\"path to the picture on the server\" alt=\"The text is shown, if the "
+#~ "picture couldn't display\"/>&lt;/p> To use a picture contact the "
+#~ "administrantor, please. Only he can upload the picture to the server and "
+#~ "input the right path."
+#~ msgstr ""
+#~ "Wenn Sie Bilder in Ihre Seite einbinden möchten, machen Sie das so: &lt;"
+#~ "p>&lt;img src=\"Pfad zum Bild\" alt=\"Text, wenn das Bild nicht angezeigt "
+#~ "werden kann\"/>&lt;/p>. Um ein Bild auf der Seite anzuzeigen, "
+#~ "benachrichtigen Sie bitten den Administrator. Dieser wird das Bild dann "
+#~ "hochladen und den Pfad einfügen."
+
+#~ msgid "Style/ Layout:"
+#~ msgstr "Design/ Layout:"
+
+#~ msgid ""
+#~ "To make a better layout, you can use css tags. To include css- tags you "
+#~ "use the style- argument: style=\"css-tag\" in a HTLM- tag. It is only "
+#~ "recommended for user knowing what they do."
+#~ msgstr ""
+#~ "Um ein besseres Layout zu erhalten können Sie css Tags benutzen.  Diese "
+#~ "betten Sie mit dem Argument  style=\"css-tag\" in einen HTML- Tag ein. "
+#~ "Bitte nutzen Sie dies nur, wenn Sie wissen was Sie tun."
+
+#~ msgid "More Informations"
+#~ msgstr "Mehr Informationen"
+
+#~ msgid "SelfHTML is a good HTML-school for more informations"
+#~ msgstr ""
+#~ "SelfHTML ist eine gute HTML- Schule um mehr Informationen zu erhalten."
+
+#~ msgid "Refuse Manager"
+#~ msgstr "Abweisen"
+
+#~ msgid "You want to refuse this changes of the page"
+#~ msgstr "Sie möchten diese Seite abweisen."
+
+#~ msgid "Send refuse"
+#~ msgstr "Abweisen bestätigen"
+
+#~ msgid "Cancel refuse"
+#~ msgstr "Abweisen abbrechen"
+
+#~ msgid "Changes"
+#~ msgstr "Änderungen"
+
+#~ msgid "Display Edit"
+#~ msgstr "Vorschau"
+
+#~ msgid "No changes to confirm"
+#~ msgstr "Keine Änderungen, die bestätigt werden müssen."
+
+#~ msgid "Refused pages"
+#~ msgstr "Abgelehnte Änderungen"
+
+#~ msgid "Display View"
+#~ msgstr "zur Seite"
+
+#~ msgid "No refused page"
+#~ msgstr "Keine abgelehnten Seite"
+
+#~ msgid "No pending changes"
+#~ msgstr "Keine unbestätigten Änderungen"
+
+#~ msgid "My pages"
+#~ msgstr "Meine Seiten"
+
+#~ msgid "Other pages"
+#~ msgstr "Andere Seiten"
+
+#~ msgid "Page information"
+#~ msgstr "Seite"
+
+#~ msgid "Content"
+#~ msgstr "Inhalt"
+
+#~ msgid "little html - school"
+#~ msgstr "Kleine HTML- Schule"
+
+#~ msgid "What has changed?"
+#~ msgstr "Was hat sich geändert?"
+
+#~ msgid "criticism"
+#~ msgstr "Kritik"
+
+#~ msgid "Mainpage"
+#~ msgstr "Hauptseite"
+
+#~ msgid ""
+#~ "Here you can find help about this zikula module. The main idea of this "
+#~ "modul is to make a manager of many sites with an admin adding sites, many "
+#~ "editors, writing things on the sites and few confirmator, watching if the "
+#~ "changes are okay."
+#~ msgstr ""
+#~ "Hier finden Sie Hilfe zu diesem Zikulamodul. Der Grundgedanke dieses "
+#~ "Moduls ist es, einen Manager anzubieten, bei dem Seiten von "
+#~ "Administrantoren hinzugefügt, von einigen Verfassern bearbeitet und "
+#~ "einigen Zensoren überprüft werden."
+
+#~ msgid "Permissions"
+#~ msgstr "Zugangsberechtigungen"
+
+#~ msgid ""
+#~ "The administrator, adding and deleating sites has to get the Admin- "
+#~ "Access for the Page- Zensor module. The Permissionrule shows like this: "
+#~ "Group: The Group of Administrators, Component:\"PageZensor::\", Instance:"
+#~ "\"::\", Permission level: \"Admin access\""
+#~ msgstr ""
+#~ "Die Administratoren, die die Seiten erstellen und auch wieder löschen "
+#~ "müssen den Admin- Access für das PageZensor Modul bekommen. Die "
+#~ "Zugangsroutine sieht so aus: Gruppe: Die Gruppe der Administratoren, "
+#~ "Komponente:\"PageZensus::\", Instanz:\"::\", Zugangslevel \"Admin access\""
+
+#~ msgid ""
+#~ "The editor, eding sites has to get the Moderate- Access for the Page- "
+#~ "Zensor module. The Permissionrule shows like this: Group: The Group of "
+#~ "Editors for one or a group of sites, Component:\"PageZensor::(1|2)\", "
+#~ "Instance:\"::\", Permission level: \"Moderate access\" (In this case the "
+#~ "group can edit page 1 and page 2.). To set the edit-access for the pages, "
+#~ "you have to put in the clip the page-id, finding in the pagemanager"
+#~ msgstr ""
+#~ "Die Verfasser, die die Seiten bearbeiten müssen den Moderator- Zugang "
+#~ "bekommen. Die Zugangsroutine sieht so aus: Gruppe: Die Gruppe der "
+#~ "Verfasser für eine oder mehrere Seiten,  Komponente:\"PageZensor::(1|"
+#~ "2)\", Instanze:\"::\", Zugangslevel: \"Moderator Zugang\" (In diesem Fall "
+#~ "hat die Gruppe den Zugang für Seite 1 und 2.). Um den Verfasserzugang zu "
+#~ "erstellen, müssen Sie die SeitenID aus der Seitenverwaltung benutzen."
+
+#~ msgid ""
+#~ "The confirmator, confirming changes has to get the Edit- Access for the "
+#~ "Page- Zensor module. The Permissionrule shows like this: Group: The Group "
+#~ "of confirmators, Component:\"PageZensor::\", Instance:\"::\", Permission "
+#~ "level: \"Edit access\""
+#~ msgstr ""
+#~ "Die Zensoren, die die Seiten bestätigen, müssen den Edit-Access erhalten. "
+#~ "Die Zugangsroutine sieht so aus: Gruppe: Die Zensorengruppe, Komponente:"
+#~ "\"PageZensor::\", Instanz:\"::\", Zugangslevel: \"Edit access\""
+
+#~ msgid ""
+#~ "The Administrator can use the pagemanger zu create new pages by putting "
+#~ "in a title and klicking on the green tik or to delete pages by using the "
+#~ "rubbish."
+#~ msgstr ""
+#~ "Der Adminstrator kann Seiten mit der Seitenverwaltung erstellen, in dem "
+#~ "er einen Titel eingibt und mit dem grünen Harken bestätigt. Mit dem "
+#~ "Mülleimer löscht er die Seite."
+
+#~ msgid ""
+#~ "The Editor can edit his pages by using the edit button on the main site "
+#~ "in the category \"my pages\". To explain, what has been changed, there is "
+#~ "the field with the title \"What has changed?\". Display edit shows the "
+#~ "new site, even if it isn't confirmed. The Display shows the last "
+#~ "confirmed site. The Mainpage show, which changes are pending, and whitch "
+#~ "changes are remarked. "
+#~ msgstr ""
+#~ "Der Verfasser kann die Seiten bearbeiten, in dem er auf  \"Bearbeiten\" "
+#~ "im der Kategory \"Meine Seiten\" klickt. Um zu sagen, was er geändert "
+#~ "hat, gibt es das Feld \"Was wurde geändert?\". Die Ansicht der geänderten "
+#~ "Seite zeigt die neue Seite an, auch wenn diese noch nicht bestätigt "
+#~ "wurde. Die Ansicht zeigt die aktuelle Seite an. Die Hauptseite zeigt, "
+#~ "welche Seite noch nicht bestätigt, oder aber abgewisen wurde. "
+
+#~ msgid ""
+#~ "The Confirmator use the edit view on the category \"changes\". In the "
+#~ "opening view he can decide, if the changes, are ok, or not. If they "
+#~ "aren't, he writes down, what isn't ok, to send the editor his remarks."
+#~ msgstr ""
+#~ "Die Zensoren benutzen die Ansicht \"Änderungen\". In der sich öffnenden "
+#~ "Ansicht können Sie entscheiden, ob die Änderungen erlaubt werden können, "
+#~ "oder nicht. Wenn es nicht geht, muss der Grund für die Verfasser "
+#~ "aufgeschrieben werden."
+
+#~ msgid "Startmodule"
+#~ msgstr "Startmodul"
+
+#~ msgid ""
+#~ "To get this module as startmodule, you have to set \"PageZensor\" as "
+#~ "startmodule. The type is \"user\" and the func is \"main\". You choose "
+#~ "the page by choosing this page as \"Mainpage\" in the \"Page Manager\""
+#~ msgstr ""
+#~ "Um dieses Modul als Startmodul für Zikula zu verwenden, muss \"PageZensor"
+#~ "\" als Startmodul gesetzt werden. Der Typ ist dann \"User\" und die "
+#~ "Funktion ist \"main\". Die Seite wird dann in der Seitenverwaltung mit "
+#~ "\"Hauptseite\" ausgewählt."
+
+#~ msgid "page_zensor"
+#~ msgstr "page_zensor"
+
+#~ msgid "Page zensus"
+#~ msgstr "Page zensus"
