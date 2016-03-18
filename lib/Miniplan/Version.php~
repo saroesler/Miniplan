@@ -15,7 +15,7 @@ class Miniplan_Version extends Zikula_AbstractVersion
         $meta['displayname']    = $this->__('Miniplan');
         $meta['description']    = $this->__("Zikula Module creating Ministrantenplans"); ///@todo description
         $meta['url']            = $this->__('Miniplan');
-        $meta['version']        = '1.1.1';
+        $meta['version']        = '1.1.0';
         $meta['official']       = 0;
         $meta['author']         = 'Sascha Rösler';
         $meta['contact']        = 'sa-roesler@t-online.de';

@@ -6,16 +6,216 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: Zikula 1.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-13 10:25+0100\n"
+"POT-Creation-Date: 2016-03-13 08:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: lib/Miniplan/Handler/NewWorship.php:105
+#: lib/Miniplan/Controller/Admin.php:440
+msgid "Worship has been added successfully."
+msgstr ""
+
+#: lib/Miniplan/Handler/WorshipEdit.php:41
+#, php-format
+msgid "Worship with id %s not found"
+msgstr ""
+
+#: lib/Miniplan/Handler/Edit.php:39
+#, php-format
+msgid "Church with id %s not found"
+msgstr ""
+
+#: lib/Miniplan/Handler/FormEdit.php:41
+#, php-format
+msgid "form with id %s not found"
+msgstr ""
+
+#: lib/Miniplan/Version.php:15 lib/Miniplan/Version.php:17
+#: templates/Admin/Plan_CreatedError.tpl:10
+#: templates/Admin/CreatePlanManuely.tpl:1 templates/Admin/ViewPlan.tpl:1
+#: templates/Admin/Plan_Created.tpl:49
+msgid "Miniplan"
+msgstr ""
+
+#: lib/Miniplan/Version.php:16
+msgid "Zikula Module creating Ministrantenplans"
+msgstr ""
+
+#: lib/Miniplan/Api/Create.php:16 lib/Miniplan/Api/Create.php:30
+msgid "No routine selected"
+msgstr ""
+
+#: lib/Miniplan/Api/Create.php:18
+msgid "The Vuong'sche Routine"
+msgstr ""
+
+#: lib/Miniplan/Api/Create.php:19
+msgid "manually"
+msgstr ""
+
+#: lib/Miniplan/Api/Create.php:20
+msgid "get odt"
+msgstr ""
+
+#: lib/Miniplan/Api/Create.php:21
+msgid "get Data"
+msgstr ""
+
+#: lib/Miniplan/Api/Create.php:31
+msgid ""
+"The Vuong- Routine chooses a voluntary acolyte for every worship at first. "
+"If there isn't any voluntary acolyte it chooses an other acolyte by a random "
+"routine. After chosing an acolyte it tests, if the acolyte is not devided in "
+"the last x days or the last x worships. You can set the time by the "
+"settings. If there are not enought ministrants for this worship, the routine "
+"select ones that are located too close. The random routine selects the "
+"acolyte having the lowest unber of devidings. <br/>After that it looks, if "
+"there is a prtner. If the partner can't ministrate at this worship, both "
+"(partner and acolyte) are removed. If the partner is too for this worship "
+"and partner order is longer than two, the partner will be not devided (This "
+"works, if the partner state is 'have to', too). otherwise they both won't be "
+"devided, too. If there isn't anything of this, the partner will devided. The "
+"'like'- option for partner says only, that the partner is tested for this "
+"worship next. If He cant, the first ministrant will devidet, too.<br/> The "
+"routine don't deals with devidings to churches or dates."
+msgstr ""
+
+#: lib/Miniplan/Api/Create.php:32 templates/Admin/createDesciption/vuong.tpl:6
+msgid "Please notice"
+msgstr ""
+
+#: lib/Miniplan/Api/Create.php:33 templates/Admin/createDesciption/vuong.tpl:8
+msgid ""
+"Partners who have always ministrate together, both must specify each other. "
+"Otherwise it may happen that those one who has stated that he has to "
+"ministrate with his partner, is not divided."
+msgstr ""
+
+#: lib/Miniplan/Api/Create.php:34 templates/Admin/createDesciption/vuong.tpl:9
+msgid ""
+"Ministrants only having time at the first worships, should be marked as "
+"\"voluntary\", otherwise it my happen that he isn't devided."
+msgstr ""
+
+#: lib/Miniplan/Api/Create.php:37
+msgid "Get the page to create the plan by yourself"
+msgstr ""
+
+#: lib/Miniplan/Api/Create.php:38
+msgid "Get the created plan as odt- file."
+msgstr ""
+
+#: lib/Miniplan/Api/Create.php:39
+msgid "Get the data as a Exel- output to create a plan manuelly."
+msgstr ""
+
+#: lib/Miniplan/Api/Admin.php:19 lib/Miniplan/Api/Admin.php:20
+#: templates/Admin/Main.tpl:1
+msgid "Main"
+msgstr ""
+
+#: lib/Miniplan/Api/Admin.php:27 templates/Admin/Address.tpl:1
+#: templates/Admin/Group.tpl:1
+msgid "Group"
+msgstr ""
+
+#: lib/Miniplan/Api/Admin.php:28
+msgid "Show the Acolytes group."
+msgstr ""
+
+#: lib/Miniplan/Api/Admin.php:36 templates/Admin/Requests.tpl:1
+msgid "Requests"
+msgstr ""
+
+#: lib/Miniplan/Api/Admin.php:37
+msgid "Show requests for the Acolytes group."
+msgstr ""
+
+#: lib/Miniplan/Api/Admin.php:44 templates/Admin/Church.tpl:1
+#: templates/Admin/settings.tpl:69 templates/Admin/settings.tpl:151
+msgid "Churches"
+msgstr ""
+
+#: lib/Miniplan/Api/Admin.php:45
+msgid "Show the Churches."
+msgstr ""
+
+#: lib/Miniplan/Api/Admin.php:51 templates/Admin/Form.tpl:1
+msgid "Forms"
+msgstr ""
+
+#: lib/Miniplan/Api/Admin.php:52
+msgid "Show the Forms."
+msgstr ""
+
+#: lib/Miniplan/Api/Admin.php:58 templates/Admin/worshipEdit.tpl:15
+#: templates/Admin/New_Worship.tpl:51 templates/Admin/Calendar.tpl:1
+msgid "Calendar"
+msgstr ""
+
+#: lib/Miniplan/Api/Admin.php:59
+msgid "Show the Calendar."
+msgstr ""
+
+#: lib/Miniplan/Api/Admin.php:65
+msgid "Passed Date"
+msgstr ""
+
+#: lib/Miniplan/Api/Admin.php:66
+msgid "See the Dates, the Ministrants pass."
+msgstr ""
+
+#: lib/Miniplan/Api/Admin.php:72
+msgid "Created Plan"
+msgstr ""
+
+#: lib/Miniplan/Api/Admin.php:73
+msgid "See the created Plan."
+msgstr ""
+
+#: lib/Miniplan/Api/Admin.php:79 templates/Admin/settings.tpl:1
+#: templates/Admin/settings.tpl:26 templates/Admin/settings.tpl:91
+msgid "Settings"
+msgstr ""
+
+#: lib/Miniplan/Api/Admin.php:80
+msgid "Configure the module."
+msgstr ""
+
+#: lib/Miniplan/Api/Admin.php:89
+msgid "My Data"
+msgstr ""
+
+#: lib/Miniplan/Api/Admin.php:90
+msgid "sign in for worships"
+msgstr ""
+
+#: lib/Miniplan/Api/Admin.php:96 templates/Admin/Address.tpl:9
+msgid "Address"
+msgstr ""
+
+#: lib/Miniplan/Api/Admin.php:97
+msgid "get the address list"
+msgstr ""
+
+#: lib/Miniplan/Api/Admin.php:261 lib/Miniplan/Api/Admin.php:280
+msgid "No form selected"
+msgstr ""
+
+#: lib/Miniplan/Api/Account.php:34
+msgid "Oberministrant"
+msgstr ""
+
+#: lib/Miniplan/Api/Account.php:48
+msgid "Ministrant"
+msgstr ""
 
 #: lib/Miniplan/Controller/Admin.php:148
 msgid "Ministrant has been added successfully."
@@ -49,11 +249,6 @@ msgstr ""
 
 #: lib/Miniplan/Controller/Admin.php:374
 msgid "Form has been removed successfully."
-msgstr ""
-
-#: lib/Miniplan/Controller/Admin.php:440
-#: lib/Miniplan/Handler/NewWorship.php:105
-msgid "Worship has been added successfully."
 msgstr ""
 
 #: lib/Miniplan/Controller/Admin.php:501
@@ -112,194 +307,197 @@ msgstr ""
 msgid "There is no valid wid!"
 msgstr ""
 
-#: lib/Miniplan/Handler/WorshipEdit.php:41
-#, possible-php-format
-msgid "Worship with id %s not found"
+#: templates/Admin/Plan_CreatedError.tpl:12
+msgid "Miniplan creation failes"
 msgstr ""
 
-#: lib/Miniplan/Handler/Edit.php:39
-#, possible-php-format
-msgid "Church with id %s not found"
+#: templates/Admin/Plan_CreatedError.tpl:15
+#: templates/Admin/Plan_Created.tpl:62
+msgid "Error and Warnings"
 msgstr ""
 
-#: lib/Miniplan/Handler/FormEdit.php:41
-#, possible-php-format
-msgid "form with id %s not found"
+#: templates/Admin/Plan_CreatedError.tpl:21
+#: templates/Admin/Plan_Created.tpl:73 templates/Admin/Plan_Created.tpl:78
+msgid "Get it as an LibreOffice/ OpenOffice- Document (.odt)"
 msgstr ""
 
-#: lib/Miniplan/Version.php:15 lib/Miniplan/Version.php:17
-#: templates/Admin/ViewPlan.tpl:1 templates/Admin/Plan_CreatedError.tpl:10
-#: templates/Admin/CreatePlanManuely.tpl:1 templates/Admin/Plan_Created.tpl:49
-msgid "Miniplan"
+#: templates/Admin/Plan_CreatedError.tpl:25
+#: templates/Admin/Plan_Created.tpl:86
+msgid "Get the Log- file"
 msgstr ""
 
-#: lib/Miniplan/Version.php:16
-msgid "Zikula Module creating Ministrantenplans"
+#: templates/Admin/Address.tpl:6
+msgid "Nr"
 msgstr ""
 
-#: lib/Miniplan/Api/Account.php:34
-msgid "Oberministrant"
+#: templates/Admin/Address.tpl:7 templates/Admin/Church.tpl:8
+#: templates/Admin/Form.tpl:10 templates/Admin/Group.tpl:7
+#: templates/Admin/Requests.tpl:8
+msgid "Name"
 msgstr ""
 
-#: lib/Miniplan/Api/Account.php:48
-msgid "Ministrant"
+#: templates/Admin/Address.tpl:8
+msgid "First Name"
 msgstr ""
 
-#: lib/Miniplan/Api/Admin.php:19 lib/Miniplan/Api/Admin.php:20
-#: templates/Admin/Main.tpl:1
-msgid "Main"
+#: templates/Admin/Address.tpl:10
+msgid "Place"
 msgstr ""
 
-#: lib/Miniplan/Api/Admin.php:27 templates/Admin/Group.tpl:1
-#: templates/Admin/Address.tpl:1
-msgid "Group"
+#: templates/Admin/Address.tpl:11
+msgid "PLZ"
 msgstr ""
 
-#: lib/Miniplan/Api/Admin.php:28
-msgid "Show the Acolytes group."
+#: templates/Admin/Address.tpl:12
+msgid "Birthday"
 msgstr ""
 
-#: lib/Miniplan/Api/Admin.php:36 templates/Admin/Requests.tpl:1
-msgid "Requests"
+#: templates/Admin/Address.tpl:13
+msgid "Telephone"
 msgstr ""
 
-#: lib/Miniplan/Api/Admin.php:37
-msgid "Show requests for the Acolytes group."
+#: templates/Admin/Address.tpl:14
+msgid "Mobile"
 msgstr ""
 
-#: lib/Miniplan/Api/Admin.php:44 templates/Admin/settings.tpl:69
-#: templates/Admin/settings.tpl:151 templates/Admin/Church.tpl:1
-msgid "Churches"
+#: templates/Admin/Address.tpl:15
+msgid "Parent Mobile"
 msgstr ""
 
-#: lib/Miniplan/Api/Admin.php:45
-msgid "Show the Churches."
+#: templates/Admin/Address.tpl:16
+msgid "e-Mail"
 msgstr ""
 
-#: lib/Miniplan/Api/Admin.php:51 templates/Admin/Form.tpl:1
-msgid "Forms"
+#: templates/Admin/Address.tpl:38 templates/Admin/passedDates.tpl:91
+#: templates/Admin/CreatePlanManuely.tpl:130 templates/Admin/ViewPlan.tpl:16
+msgid "Print"
 msgstr ""
 
-#: lib/Miniplan/Api/Admin.php:52
-msgid "Show the Forms."
+#: templates/Admin/worshipEdit.tpl:19 templates/Admin/New_Worship.tpl:55
+msgid "Form:"
 msgstr ""
 
-#: lib/Miniplan/Api/Admin.php:58 templates/Admin/Calendar.tpl:1
-#: templates/Admin/worshipEdit.tpl:15 templates/Admin/New_Worship.tpl:51
-msgid "Calendar"
+#: templates/Admin/worshipEdit.tpl:23 templates/Admin/New_Worship.tpl:59
+#: templates/Admin/FormEdit.tpl:10
+msgid "Church:"
 msgstr ""
 
-#: lib/Miniplan/Api/Admin.php:59
-msgid "Show the Calendar."
+#: templates/Admin/worshipEdit.tpl:27 templates/Admin/New_Worship.tpl:63
+#: templates/Admin/FormEdit.tpl:14
+msgid "Time:"
 msgstr ""
 
-#: lib/Miniplan/Api/Admin.php:65
-msgid "Passed Date"
+#: templates/Admin/worshipEdit.tpl:31 templates/Admin/New_Worship.tpl:67
+#: templates/Admin/FormEdit.tpl:18
+msgid "Who many ministrants are reqested?"
 msgstr ""
 
-#: lib/Miniplan/Api/Admin.php:66
-msgid "See the Dates, the Ministrants pass."
+#: templates/Admin/worshipEdit.tpl:33 templates/Admin/New_Worship.tpl:69
+#: templates/Admin/FormEdit.tpl:20
+msgid "If you put in an 0, it is an voluntarily worship."
 msgstr ""
 
-#: lib/Miniplan/Api/Admin.php:72
-msgid "Created Plan"
+#: templates/Admin/worshipEdit.tpl:36 templates/Admin/New_Worship.tpl:72
+#: templates/Admin/FormEdit.tpl:23
+msgid "Infos:"
 msgstr ""
 
-#: lib/Miniplan/Api/Admin.php:73
-msgid "See the created Plan."
+#: templates/Admin/worshipEdit.tpl:44
+msgid "Date:"
 msgstr ""
 
-#: lib/Miniplan/Api/Admin.php:79 templates/Admin/settings.tpl:1
-#: templates/Admin/settings.tpl:26 templates/Admin/settings.tpl:91
-msgid "Settings"
+#: templates/Admin/worshipEdit.tpl:51 templates/Admin/ChurchEdit.tpl:38
+#: templates/Admin/New_Worship.tpl:87 templates/Admin/myData/My_Address.tpl:78
+#: templates/Admin/FormEdit.tpl:28 templates/Admin/settings.tpl:234
+msgid "Save"
 msgstr ""
 
-#: lib/Miniplan/Api/Admin.php:80
-msgid "Configure the module."
+#: templates/Admin/worshipEdit.tpl:52 templates/Admin/ChurchEdit.tpl:39
+#: templates/Admin/New_Worship.tpl:88 templates/Admin/myData/My_Address.tpl:79
+#: templates/Admin/FormEdit.tpl:29 templates/Admin/settings.tpl:235
+msgid "Cancel"
 msgstr ""
 
-#: lib/Miniplan/Api/Admin.php:89
-msgid "My Data"
+#: templates/Admin/passedDates.tpl:1
+msgid "Passed Dates"
 msgstr ""
 
-#: lib/Miniplan/Api/Admin.php:90
-msgid "sign in for worships"
+#: templates/Admin/passedDates.tpl:3 templates/Admin/quick_input.tpl:4
+#: templates/Admin/Calendar.tpl:2
+msgid "create new worship"
 msgstr ""
 
-#: lib/Miniplan/Api/Admin.php:96 templates/Admin/Address.tpl:9
-msgid "Address"
+#: templates/Admin/passedDates.tpl:7 templates/Admin/passedDates.tpl:68
+#: templates/Admin/quick_input.tpl:8
+msgid "not devide"
 msgstr ""
 
-#: lib/Miniplan/Api/Admin.php:97
-msgid "get the address list"
+#: templates/Admin/passedDates.tpl:8 templates/Admin/passedDates.tpl:74
+#: templates/Admin/quick_input.tpl:9
+msgid "devide"
 msgstr ""
 
-#: lib/Miniplan/Api/Admin.php:261 lib/Miniplan/Api/Admin.php:280
-msgid "No form selected"
+#: templates/Admin/passedDates.tpl:9 templates/Admin/passedDates.tpl:44
+#: templates/Admin/passedDates.tpl:71 templates/Admin/quick_input.tpl:10
+#: templates/Admin/quick_input.tpl:44 templates/Admin/quick_input.tpl:52
+#: templates/Admin/myData/My_Calendar.tpl:265
+msgid "like"
 msgstr ""
 
-#: lib/Miniplan/Api/Create.php:16 lib/Miniplan/Api/Create.php:30
-msgid "No routine selected"
+#: templates/Admin/passedDates.tpl:16 templates/Admin/Church.tpl:7
+#: templates/Admin/quick_input.tpl:17 templates/Admin/Calendar.tpl:9
+#: templates/Admin/Form.tpl:9 templates/Admin/Group.tpl:6
+#: templates/Admin/Requests.tpl:7
+msgid "ID"
 msgstr ""
 
-#: lib/Miniplan/Api/Create.php:18
-msgid "The Vuong'sche Routine"
+#: templates/Admin/passedDates.tpl:17 templates/Admin/New_Worship.tpl:81
+#: templates/Admin/quick_input.tpl:18 templates/Admin/Calendar.tpl:10
+#: templates/Admin/myData/My_Calendar.tpl:275
+msgid "Date"
 msgstr ""
 
-#: lib/Miniplan/Api/Create.php:19
-msgid "manually"
+#: templates/Admin/passedDates.tpl:18 templates/Admin/quick_input.tpl:19
+#: templates/Admin/Calendar.tpl:11 templates/Admin/myData/My_Calendar.tpl:276
+#: templates/Admin/Form.tpl:11
+msgid "Time"
 msgstr ""
 
-#: lib/Miniplan/Api/Create.php:20
-msgid "get odt"
+#: templates/Admin/passedDates.tpl:19 templates/Admin/quick_input.tpl:20
+#: templates/Admin/Calendar.tpl:12 templates/Admin/myData/My_Calendar.tpl:277
+#: templates/Admin/Form.tpl:12
+msgid "Church"
 msgstr ""
 
-#: lib/Miniplan/Api/Create.php:21
-msgid "get Data"
+#: templates/Admin/passedDates.tpl:20 templates/Admin/quick_input.tpl:21
+#: templates/Admin/Calendar.tpl:13 templates/Admin/Form.tpl:13
+msgid "Ministrants"
 msgstr ""
 
-#: lib/Miniplan/Api/Create.php:31
-msgid ""
-"The Vuong- Routine chooses a voluntary acolyte for every worship at first. "
-"If there isn't any voluntary acolyte it chooses an other acolyte by a random "
-"routine. After chosing an acolyte it tests, if the acolyte is not devided in "
-"the last 4 days or the last 4 worships. The random routine selects the "
-"acolyte having the lowest unber of devidings. <br/>After that it looks, if "
-"there is a prtner. If the partner can't ministrate at this worship, both "
-"(partner and acolyte) are removed. If the partner is too for this worship "
-"and partner order is longer than two, the partner will be not devided (This "
-"works, if the partner state is 'have to', too). otherwise they both won't be "
-"devided, too. If there isn't anything of this, the partner will devided. <br/"
-"> The routine don't deals with devidings to churches or dates."
+#: templates/Admin/passedDates.tpl:21 templates/Admin/quick_input.tpl:22
+#: templates/Admin/Calendar.tpl:14 templates/Admin/myData/My_Calendar.tpl:278
+#: templates/Admin/Form.tpl:14
+msgid "Info"
 msgstr ""
 
-#: lib/Miniplan/Api/Create.php:32 templates/Admin/createDesciption/vuong.tpl:6
-msgid "Please notice"
+#: templates/Admin/passedDates.tpl:44 templates/Admin/quick_input.tpl:45
+#: templates/Admin/quick_input.tpl:52
+#: templates/Admin/myData/My_Calendar.tpl:266
+msgid "always"
 msgstr ""
 
-#: lib/Miniplan/Api/Create.php:33 templates/Admin/createDesciption/vuong.tpl:8
-msgid ""
-"Partners who have always ministrate together, both must specify each other. "
-"Otherwise it may happen that those one who has stated that he has to "
-"ministrate with his partner, is not divided."
+#: templates/Admin/passedDates.tpl:44 templates/Admin/quick_input.tpl:48
+#: templates/Admin/quick_input.tpl:52
+#: templates/Admin/myData/My_Calendar.tpl:268
+msgid "with"
 msgstr ""
 
-#: lib/Miniplan/Api/Create.php:34 templates/Admin/createDesciption/vuong.tpl:9
-msgid ""
-"Ministrants only having time at the first worships, should be marked as "
-"\"voluntary\", otherwise it my happen that he isn't devided."
+#: templates/Admin/passedDates.tpl:60 templates/Admin/quick_input.tpl:66
+msgid "voluntary"
 msgstr ""
 
-#: lib/Miniplan/Api/Create.php:37
-msgid "Get the page to create the plan by yourself"
-msgstr ""
-
-#: lib/Miniplan/Api/Create.php:38
-msgid "Get the created plan as odt- file."
-msgstr ""
-
-#: lib/Miniplan/Api/Create.php:39
-msgid "Get the data as a Exel- output to create a plan manuelly."
+#: templates/Admin/passedDates.tpl:90 templates/Admin/quick_input.tpl:1
+msgid "Quick Input"
 msgstr ""
 
 #: templates/Admin/ChurchEdit.tpl:1
@@ -322,107 +520,69 @@ msgstr ""
 msgid "Adress"
 msgstr ""
 
-#: templates/Admin/ChurchEdit.tpl:38 templates/Admin/myData/My_Address.tpl:69
-#: templates/Admin/settings.tpl:169 templates/Admin/worshipEdit.tpl:51
-#: templates/Admin/FormEdit.tpl:28 templates/Admin/New_Worship.tpl:87
-msgid "Save"
+#: templates/Admin/Main.tpl:21
+msgid "There are minis, their passed dates are not controlled."
 msgstr ""
 
-#: templates/Admin/ChurchEdit.tpl:39 templates/Admin/myData/My_Address.tpl:70
-#: templates/Admin/settings.tpl:170 templates/Admin/worshipEdit.tpl:52
-#: templates/Admin/FormEdit.tpl:29 templates/Admin/New_Worship.tpl:88
-msgid "Cancel"
+#: templates/Admin/Main.tpl:24
+msgid "Create a Miniplan"
 msgstr ""
 
-#: templates/Admin/Calendar.tpl:2 templates/Admin/passedDates.tpl:3
-#: templates/Admin/quick_input.tpl:4
-msgid "create new worship"
+#: templates/Admin/Main.tpl:27
+msgid "choose a routine:"
 msgstr ""
 
-#: templates/Admin/Calendar.tpl:9 templates/Admin/Requests.tpl:7
-#: templates/Admin/Group.tpl:6 templates/Admin/Form.tpl:9
-#: templates/Admin/Church.tpl:7 templates/Admin/passedDates.tpl:16
-#: templates/Admin/quick_input.tpl:17
-msgid "ID"
+#: templates/Admin/Main.tpl:31
+msgid "Description"
 msgstr ""
 
-#: templates/Admin/Calendar.tpl:10 templates/Admin/myData/My_Calendar.tpl:275
-#: templates/Admin/passedDates.tpl:17 templates/Admin/quick_input.tpl:18
-#: templates/Admin/New_Worship.tpl:81
-msgid "Date"
+#: templates/Admin/Main.tpl:39
+msgid "create plan now!"
 msgstr ""
 
-#: templates/Admin/Calendar.tpl:11 templates/Admin/myData/My_Calendar.tpl:276
-#: templates/Admin/Form.tpl:11 templates/Admin/passedDates.tpl:18
-#: templates/Admin/quick_input.tpl:19
-msgid "Time"
+#: templates/Admin/New_Worship.tpl:75
+msgid "Name for this form"
 msgstr ""
 
-#: templates/Admin/Calendar.tpl:12 templates/Admin/myData/My_Calendar.tpl:277
-#: templates/Admin/Form.tpl:12 templates/Admin/passedDates.tpl:19
-#: templates/Admin/quick_input.tpl:20
-msgid "Church"
+#: templates/Admin/New_Worship.tpl:75
+msgid "New Form"
 msgstr ""
 
-#: templates/Admin/Calendar.tpl:13 templates/Admin/Form.tpl:13
-#: templates/Admin/passedDates.tpl:20 templates/Admin/quick_input.tpl:21
-msgid "Ministrants"
+#: templates/Admin/New_Worship.tpl:75
+msgid "save form"
 msgstr ""
 
-#: templates/Admin/Calendar.tpl:14 templates/Admin/myData/My_Calendar.tpl:278
-#: templates/Admin/Form.tpl:14 templates/Admin/passedDates.tpl:21
-#: templates/Admin/quick_input.tpl:22
-msgid "Info"
+#: templates/Admin/CreatePlanManuely.tpl:35
+msgid "have to"
 msgstr ""
 
-#: templates/Admin/Calendar.tpl:35
-msgid "Delete all worships"
+#: templates/Admin/CreatePlanManuely.tpl:41
+msgid "happy with"
 msgstr ""
 
-#: templates/Admin/Requests.tpl:8 templates/Admin/Group.tpl:7
-#: templates/Admin/Form.tpl:10 templates/Admin/Address.tpl:7
-#: templates/Admin/Church.tpl:8
-msgid "Name"
+#: templates/Admin/CreatePlanManuely.tpl:111
+msgid "All"
+msgstr ""
+
+#: templates/Admin/CreatePlanManuely.tpl:131
+msgid "Delete all Devisions!"
+msgstr ""
+
+#: templates/Admin/Church.tpl:9
+msgid "ShortName"
+msgstr ""
+
+#: templates/Admin/quick_input.tpl:48
+#: templates/Admin/myData/My_Calendar.tpl:268
+msgid "divide"
 msgstr ""
 
 #: templates/Admin/ViewPlan.tpl:15
 msgid "Create the Plan manuelly"
 msgstr ""
 
-#: templates/Admin/ViewPlan.tpl:16 templates/Admin/CreatePlanManuely.tpl:121
-#: templates/Admin/Address.tpl:38 templates/Admin/passedDates.tpl:91
-msgid "Print"
-msgstr ""
-
-#: templates/Admin/Plan_CreatedError.tpl:12
-msgid "Miniplan creation failes"
-msgstr ""
-
-#: templates/Admin/Plan_CreatedError.tpl:15
-#: templates/Admin/Plan_Created.tpl:62
-msgid "Error and Warnings"
-msgstr ""
-
-#: templates/Admin/Plan_CreatedError.tpl:21
-#: templates/Admin/Plan_Created.tpl:73 templates/Admin/Plan_Created.tpl:78
-msgid "Get it as an LibreOffice/ OpenOffice- Document (.odt)"
-msgstr ""
-
-#: templates/Admin/Plan_CreatedError.tpl:25
-#: templates/Admin/Plan_Created.tpl:86
-msgid "Get the Log- file"
-msgstr ""
-
-#: templates/Admin/CreatePlanManuely.tpl:34
-msgid "have to"
-msgstr ""
-
-#: templates/Admin/CreatePlanManuely.tpl:40
-msgid "happy with"
-msgstr ""
-
-#: templates/Admin/CreatePlanManuely.tpl:121
-msgid "Delete all Devisions!"
+#: templates/Admin/Calendar.tpl:35
+msgid "Delete all worships"
 msgstr ""
 
 #: templates/Admin/myData/Header.tpl:7
@@ -446,44 +606,44 @@ msgstr ""
 msgid "On this page you can input your Address."
 msgstr ""
 
-#: templates/Admin/myData/My_Address.tpl:23
+#: templates/Admin/myData/My_Address.tpl:23 templates/Admin/settings.tpl:196
 msgid "First Name:"
 msgstr ""
 
-#: templates/Admin/myData/My_Address.tpl:27
+#: templates/Admin/myData/My_Address.tpl:28
 msgid "Name:"
 msgstr ""
 
-#: templates/Admin/myData/My_Address.tpl:31
-msgid "Street:"
+#: templates/Admin/myData/My_Address.tpl:33 templates/Admin/settings.tpl:204
+msgid "Address:"
 msgstr ""
 
-#: templates/Admin/myData/My_Address.tpl:35
+#: templates/Admin/myData/My_Address.tpl:38
 msgid "Town:"
 msgstr ""
 
-#: templates/Admin/myData/My_Address.tpl:39
+#: templates/Admin/myData/My_Address.tpl:43
 msgid "PLZ:"
 msgstr ""
 
-#: templates/Admin/myData/My_Address.tpl:43
+#: templates/Admin/myData/My_Address.tpl:48 templates/Admin/settings.tpl:216
 msgid "Birthday:"
 msgstr ""
 
-#: templates/Admin/myData/My_Address.tpl:48
-msgid "Telephone:"
+#: templates/Admin/myData/My_Address.tpl:54 templates/Admin/settings.tpl:220
+msgid "Phone:"
 msgstr ""
 
-#: templates/Admin/myData/My_Address.tpl:52
+#: templates/Admin/myData/My_Address.tpl:59 templates/Admin/settings.tpl:224
 msgid "Mobile:"
 msgstr ""
 
-#: templates/Admin/myData/My_Address.tpl:56
+#: templates/Admin/myData/My_Address.tpl:64 templates/Admin/settings.tpl:228
 msgid "Parent Mobile:"
 msgstr ""
 
-#: templates/Admin/myData/My_Address.tpl:60
-#: templates/Admin/myData/My_Address.tpl:64
+#: templates/Admin/myData/My_Address.tpl:69
+#: templates/Admin/myData/My_Address.tpl:73
 msgid "e-Mail:"
 msgstr ""
 
@@ -551,7 +711,7 @@ msgstr ""
 
 #: templates/Admin/myData/My_Calendar.tpl:189 templates/Admin/settings.tpl:76
 #: templates/Admin/settings.tpl:158
-#, possible-php-format
+#, php-format
 msgid "allowed to change %s"
 msgstr ""
 
@@ -597,7 +757,7 @@ msgid "on Sunday"
 msgstr ""
 
 #: templates/Admin/myData/My_Calendar.tpl:254
-#, possible-php-format
+#, php-format
 msgid "in %s"
 msgstr ""
 
@@ -613,30 +773,6 @@ msgstr ""
 msgid "please"
 msgstr ""
 
-#: templates/Admin/myData/My_Calendar.tpl:265
-#: templates/Admin/passedDates.tpl:9 templates/Admin/passedDates.tpl:44
-#: templates/Admin/passedDates.tpl:71 templates/Admin/quick_input.tpl:10
-#: templates/Admin/quick_input.tpl:44 templates/Admin/quick_input.tpl:52
-msgid "like"
-msgstr ""
-
-#: templates/Admin/myData/My_Calendar.tpl:266
-#: templates/Admin/passedDates.tpl:44 templates/Admin/quick_input.tpl:45
-#: templates/Admin/quick_input.tpl:52
-msgid "always"
-msgstr ""
-
-#: templates/Admin/myData/My_Calendar.tpl:268
-#: templates/Admin/passedDates.tpl:44 templates/Admin/quick_input.tpl:48
-#: templates/Admin/quick_input.tpl:52
-msgid "with"
-msgstr ""
-
-#: templates/Admin/myData/My_Calendar.tpl:268
-#: templates/Admin/quick_input.tpl:48
-msgid "divide"
-msgstr ""
-
 #: templates/Admin/myData/My_Calendar.tpl:271
 msgid "Worships"
 msgstr ""
@@ -647,6 +783,18 @@ msgstr ""
 
 #: templates/Admin/myData/My_Calendar.tpl:311
 msgid "aborte"
+msgstr ""
+
+#: templates/Admin/FormEdit.tpl:1
+msgid "Form Edit"
+msgstr ""
+
+#: templates/Admin/FormEdit.tpl:4
+msgid "Edit form"
+msgstr ""
+
+#: templates/Admin/FormEdit.tpl:6
+msgid "Formname:"
 msgstr ""
 
 #: templates/Admin/settings.tpl:21
@@ -735,128 +883,45 @@ msgstr ""
 msgid "reset Sunday state for every mini"
 msgstr ""
 
-#: templates/Admin/settings.tpl:162
-#, possible-php-format
+#: templates/Admin/settings.tpl:164
+#, php-format
 msgid "reset %s state for every mini"
 msgstr ""
 
-#: templates/Admin/Main.tpl:21
-msgid "There are minis, their passed dates are not controlled."
+#: templates/Admin/settings.tpl:172
+msgid "Creation Algorithm"
 msgstr ""
 
-#: templates/Admin/Main.tpl:24
-msgid "Create a Miniplan"
+#: templates/Admin/settings.tpl:174
+msgid "Vuong-Algorithm"
 msgstr ""
 
-#: templates/Admin/Main.tpl:27
-msgid "choose a routine:"
+#: templates/Admin/settings.tpl:191
+msgid "Profile Settings"
 msgstr ""
 
-#: templates/Admin/Main.tpl:31
-msgid "Description"
+#: templates/Admin/settings.tpl:193
+msgid "Address fields"
 msgstr ""
 
-#: templates/Admin/Main.tpl:39
-msgid "create plan now!"
+#: templates/Admin/settings.tpl:194
+msgid "Please insert in the following fields the name of the Profile- fields."
 msgstr ""
 
-#: templates/Admin/worshipEdit.tpl:19 templates/Admin/New_Worship.tpl:55
-msgid "Form:"
+#: templates/Admin/settings.tpl:200
+msgid "Surname:"
 msgstr ""
 
-#: templates/Admin/worshipEdit.tpl:23 templates/Admin/FormEdit.tpl:10
-#: templates/Admin/New_Worship.tpl:59
-msgid "Church:"
+#: templates/Admin/settings.tpl:208
+msgid "Place:"
 msgstr ""
 
-#: templates/Admin/worshipEdit.tpl:27 templates/Admin/FormEdit.tpl:14
-#: templates/Admin/New_Worship.tpl:63
-msgid "Time:"
-msgstr ""
-
-#: templates/Admin/worshipEdit.tpl:31 templates/Admin/FormEdit.tpl:18
-#: templates/Admin/New_Worship.tpl:67
-msgid "Who many ministrants are reqested?"
-msgstr ""
-
-#: templates/Admin/worshipEdit.tpl:33 templates/Admin/FormEdit.tpl:20
-#: templates/Admin/New_Worship.tpl:69
-msgid "If you put in an 0, it is an voluntarily worship."
-msgstr ""
-
-#: templates/Admin/worshipEdit.tpl:36 templates/Admin/FormEdit.tpl:23
-#: templates/Admin/New_Worship.tpl:72
-msgid "Infos:"
-msgstr ""
-
-#: templates/Admin/worshipEdit.tpl:44
-msgid "Date:"
+#: templates/Admin/settings.tpl:212
+msgid "Plz:"
 msgstr ""
 
 #: templates/Admin/Form.tpl:2
 msgid "create new form"
-msgstr ""
-
-#: templates/Admin/Address.tpl:6
-msgid "Nr"
-msgstr ""
-
-#: templates/Admin/Address.tpl:8
-msgid "First Name"
-msgstr ""
-
-#: templates/Admin/Address.tpl:10
-msgid "Place"
-msgstr ""
-
-#: templates/Admin/Address.tpl:11
-msgid "PLZ"
-msgstr ""
-
-#: templates/Admin/Address.tpl:12
-msgid "Birthday"
-msgstr ""
-
-#: templates/Admin/Address.tpl:13
-msgid "Telephone"
-msgstr ""
-
-#: templates/Admin/Address.tpl:14
-msgid "Mobile"
-msgstr ""
-
-#: templates/Admin/Address.tpl:15
-msgid "Parent Mobile"
-msgstr ""
-
-#: templates/Admin/Address.tpl:16
-msgid "e-Mail"
-msgstr ""
-
-#: templates/Admin/Church.tpl:9
-msgid "ShortName"
-msgstr ""
-
-#: templates/Admin/passedDates.tpl:1
-msgid "Passed Dates"
-msgstr ""
-
-#: templates/Admin/passedDates.tpl:7 templates/Admin/passedDates.tpl:68
-#: templates/Admin/quick_input.tpl:8
-msgid "not devide"
-msgstr ""
-
-#: templates/Admin/passedDates.tpl:8 templates/Admin/passedDates.tpl:74
-#: templates/Admin/quick_input.tpl:9
-msgid "devide"
-msgstr ""
-
-#: templates/Admin/passedDates.tpl:60 templates/Admin/quick_input.tpl:66
-msgid "voluntary"
-msgstr ""
-
-#: templates/Admin/passedDates.tpl:90 templates/Admin/quick_input.tpl:1
-msgid "Quick Input"
 msgstr ""
 
 #: templates/Admin/Plan_Created.tpl:53
@@ -885,28 +950,4 @@ msgstr ""
 
 #: templates/Admin/Plan_Created.tpl:112
 msgid "Log File"
-msgstr ""
-
-#: templates/Admin/FormEdit.tpl:1
-msgid "Form Edit"
-msgstr ""
-
-#: templates/Admin/FormEdit.tpl:4
-msgid "Edit form"
-msgstr ""
-
-#: templates/Admin/FormEdit.tpl:6
-msgid "Formname:"
-msgstr ""
-
-#: templates/Admin/New_Worship.tpl:75
-msgid "Name for this form"
-msgstr ""
-
-#: templates/Admin/New_Worship.tpl:75
-msgid "New Form"
-msgstr ""
-
-#: templates/Admin/New_Worship.tpl:75
-msgid "save form"
 msgstr ""

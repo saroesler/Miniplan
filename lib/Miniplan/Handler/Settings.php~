@@ -192,8 +192,6 @@ class Miniplan_Handler_Settings extends Zikula_Form_AbstractHandler
 		$this->setVar('parentmobile', $data["parentmobile"]);
 
 		$this->setVar('voungMaxLevel', $data["voungMaxLevel"]);
-		$this->setVar('voungDistanceWorships', $data["voungDistanceWorships"]);
-		$this->setVar('voungDistanceDays', $data["voungDistanceDays"]);
 		
         return $view->redirect(ModUtil::url('Miniplan', 'admin', 'settings' ));
     }

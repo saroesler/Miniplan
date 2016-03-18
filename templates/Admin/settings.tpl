@@ -156,15 +156,80 @@
 			
 			{formcheckbox id="church_`$cid`" checked=$churchstate  onChange="changeNew('church_$cid')"}
 			{gt text="allowed to change %s" tag1=$church->getName() assign="church_label_text"}
-			{formlabel for='Sunday' text=$church_label_text}
+			{formlabel for='church_`$cid`' text=$church_label_text}
+
+			<br/>
 			
 			{formcheckbox id="Resetchurch_`$cid`" checked=false  onChange="changeReset('church_$cid')"}
 			{gt text="reset %s state for every mini" tag1=$church->getName() assign="church_label_text"}
-			{formlabel for='Sunday' text=$church_label_text}
-		    </br>
+			{formlabel for='Resetchurch_`$cid`' text=$church_label_text}
+			
+		    </br><br/>
         {/foreach}
     </fieldset>
 	</div>
+
+	<h2>{gt text="Creation Algorithm"}</h2>
+    <fieldset>
+		<legend>{gt text='Vuong-Algorithm'}</legend>
+		<div class="z-formrow">
+			{formlabel for='voungMaxLevel' text='enter ministrant maximal'}
+			{formtextinput id="voungMaxLevel" maxLength=3 size=3 mandatory=true text=$settings.voungMaxLevel}
+		</div>
+		
+		<div class="z-formrow">
+			{formlabel for='voungDistanceDays' text='distance in days'}
+			{formtextinput id="voungDistanceDays" maxLength=3 size=3 mandatory=true text=$settings.voungDistanceDays}
+		</div>
+		
+		<div class="z-formrow">
+			{formlabel for='voungDistanceWorships' text='distance in worhsips'}
+			{formtextinput id="voungDistanceWorships" maxLength=3 size=3 mandatory=true text=$settings.voungDistanceWorships}
+		</div>
+	</fieldset>
+
+	<h2>{gt text="Profile Settings"}</h2>
+	<fieldset>
+		<legend>{gt text="Address fields"}</legend>
+		<div class="z-informationmsg"><p>{gt text="Please insert in the following fields the name of the Profile- fields."}</p></div>
+		<div class="z-formrow">
+			{formlabel for='firstname' __text='First Name:'}
+			{formtextinput id="firstname" maxLength=200 mandatory=true text=$settings.firstname}
+		</div>
+		<div class="z-formrow">
+			{formlabel for='surname' __text='Surname:'}
+			{formtextinput id="surname" maxLength=200 mandatory=true text=$settings.surname}
+		</div>
+		<div class="z-formrow">
+			{formlabel for='address' __text='Address:'}
+			{formtextinput id="address" maxLength=200 mandatory=true text=$settings.address}
+		</div>
+		<div class="z-formrow">
+			{formlabel for='place' __text='Place:'}
+			{formtextinput id="place" maxLength=200 mandatory=true text=$settings.place}
+		</div>
+		<div class="z-formrow">
+			{formlabel for='plz' __text='Plz:'}
+			{formtextinput id="plz" maxLength=200 mandatory=true text=$settings.plz}
+		</div>
+		<div class="z-formrow">
+			{formlabel for='birthday' __text='Birthday:'}
+			{formtextinput id="birthday" maxLength=200 mandatory=true text=$settings.birthday}
+		</div>
+		<div class="z-formrow">
+			{formlabel for='phone' __text='Phone:'}
+			{formtextinput id="phone" maxLength=200 mandatory=true text=$settings.phone}
+		</div>
+		<div class="z-formrow">
+			{formlabel for='mobile' __text='Mobile:'}
+			{formtextinput id="mobile" maxLength=200 mandatory=true text=$settings.mobile}
+		</div>
+		<div class="z-formrow">
+			{formlabel for='parentmobile' __text='Parent Mobile:'}
+			{formtextinput id="parentmobile" maxLength=200 mandatory=true text=$settings.parentmobile}
+		</div>
+   </fieldset>
+
 	<div class="z-formbuttons z-buttons">
 	   {formbutton class="z-bt-ok" commandName="save" __text="Save"}
 	   {formbutton class="z-bt-cancel" commandName="cancel" __text="Cancel"}

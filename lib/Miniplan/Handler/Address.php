@@ -40,7 +40,9 @@ class Miniplan_Handler_Address extends Zikula_Form_AbstractHandler
 			$uid = SessionUtil::getVar('uid');
 		$this->uid = $uid;
 		$user = UserUtil::getPNUser($uid);
+		print_r($user);
 		$view->assign('user',$user);
+		$view->assign('settings',$this->getVars());
 
 
         // assign current values to form fields
@@ -71,15 +73,15 @@ class Miniplan_Handler_Address extends Zikula_Form_AbstractHandler
         $data = $view->getValues();
         print_r($data);
         
-        UserUtil::setVar(first_name,$data["inFirstName"],$this->uid);
-        UserUtil::setVar(name,$data["inName"],$this->uid);
-        UserUtil::setVar(street,$data["inStreet"],$this->uid);
-        UserUtil::setVar(place,$data["inTown"],$this->uid);
-        UserUtil::setVar(plz,$data["inPlz"],$this->uid);
-        UserUtil::setVar(birthday,$data["inBirthday"],$this->uid);
-        UserUtil::setVar(tel,$data["inTel"],$this->uid);
-        UserUtil::setVar(mobile,$data["inHdy"],$this->uid);
-        UserUtil::setVar(parent_mobile,$data["inParentHdy"],$this->uid);
+        UserUtil::setVar($this->getVar('firstname') ,$data["inFirstName"],$this->uid);
+        UserUtil::setVar($this->getVar('surname') ,$data["inName"],$this->uid);
+        UserUtil::setVar($this->getVar('address') ,$data["inStreet"],$this->uid);
+        UserUtil::setVar($this->getVar('place') ,$data["inTown"],$this->uid);
+        UserUtil::setVar($this->getVar('plz') ,$data["inPlz"],$this->uid);
+        UserUtil::setVar($this->getVar('birthday') ,$data["inBirthday"],$this->uid);
+        UserUtil::setVar($this->getVar('phone') ,$data["inTel"],$this->uid);
+        UserUtil::setVar($this->getVar('mobile') ,$data["inHdy"],$this->uid);
+        UserUtil::setVar($this->getVar('parentmobile') ,$data["inParentHdy"],$this->uid);
         
         return $view->redirect($url);
     }

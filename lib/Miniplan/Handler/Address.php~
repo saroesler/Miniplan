@@ -15,10 +15,10 @@
 /**
  * Form handler for create and edit.
  */
-class Miniplan_Handler_Edit extends Zikula_Form_AbstractHandler
+class Miniplan_Handler_Address extends Zikula_Form_AbstractHandler
 {
 
-    private $church;
+    private $uid;
 
     /**
      * Setup form.
@@ -30,18 +30,18 @@ class Miniplan_Handler_Edit extends Zikula_Form_AbstractHandler
     public function initialize(Zikula_Form_View $view)
     {
         // Get the id.
-        $actionid = FormUtil::getPassedValue('id',null,'GET');
-        if ($actionid) {
-            // load user with id
-            $this->church = $this->entityManager->find('Miniplan_Entity_Church', $actionid);
-
-            if (!$this->church) {
-                return LogUtil::registerError($this->__f('Church with id %s not found', $pid));
-            }
-            $view->assign('church',$this->church);
-        } else {
-            echo 'No ID';
-        }
+        if(SecurityUtil::checkPermission('Miniplan::', '::', ACCESS_COMMENT))
+		{
+			$uid = FormUtil::getPassedValue('id',null,'GET');
+			if(! $uid)
+				$uid = SessionUtil::getVar('uid');
+		}
+		else
+			$uid = SessionUtil::getVar('uid');
+		$this->uid = $uid;
+		$user = UserUtil::getPNUser($uid);
+		$view->assign('user',$user);
+		$view->assign('settings',$this->getVars());
 
 
         // assign current values to form fields
@@ -58,7 +58,7 @@ class Miniplan_Handler_Edit extends Zikula_Form_AbstractHandler
      */
     public function handleCommand(Zikula_Form_View $view, &$args)
     {
-        $url = ModUtil::url('Miniplan', 'admin', 'Church' );
+        $url = ModUtil::url('Miniplan', 'admin', 'my_address', array("id"=>$this->uid) );
         if ($args['commandName'] == 'cancel') {
             return $view->redirect($url);
         }
@@ -71,14 +71,17 @@ class Miniplan_Handler_Edit extends Zikula_Form_AbstractHandler
         // load form values
         $data = $view->getValues();
         print_r($data);
-
-        // merge user and save everything
-        //$church = $this->entityManager->find('Miniplan_Entity_Church', $actionid);
-        print_r($this->church);
-        $this->church->merge($data);
-       // $this->page->setedit_comment($uid);
-        $this->entityManager->persist($this->church);
-        $this->entityManager->flush();
+        
+        UserUtil::setVar($this->getVar('firstname') ,$data["inFirstName"],$this->uid);
+        UserUtil::setVar($this->getVar('surname') ,$data["inName"],$this->uid);
+        UserUtil::setVar($this->getVar('address') ,$data["inStreet"],$this->uid);
+        UserUtil::setVar($this->getVar('place') ,$data["inTown"],$this->uid);
+        UserUtil::setVar($this->getVar('plz') ,$data["inPlz"],$this->uid);
+        UserUtil::setVar($this->getVar('birthday') ,$data["inBirthday"],$this->uid);
+        UserUtil::setVar($this->getVar('phone') ,$data["inTel"],$this->uid);
+        UserUtil::setVar($this->getVar('mobile') ,$data["inHdy"],$this->uid);
+        UserUtil::setVar($this->getVar('parentmobile') ,$data["inParentHdy"],$this->uid);
+        
         return $view->redirect($url);
     }
 }

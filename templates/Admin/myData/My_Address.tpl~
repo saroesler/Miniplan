@@ -29,43 +29,43 @@ jQuery(function() {
 		<div class="z-formrow">
 			{formlabel for='inName' __text='Name:'}
 			{assign var="surnameType" value=$settings.surname }
-			{formtextinput id="inName" maxLength=300 mandatory=true text=$user.__ATTRIBUTES__.$surnameType}
+			{formtextinput id="inName" maxLength=300 mandatory=true text=$user.__ATTRIBUTES__.surnameType}
 		</div>
 		<div class="z-formrow">
 			{formlabel for='inStreet' __text='Address:'}
 			{assign var="addressType" value=$settings.address }
-			{formtextinput id="inStreet" maxLength=300 mandatory=true text=$user.__ATTRIBUTES__.$addressType}
+			{formtextinput id="inStreet" maxLength=300 mandatory=true text=$user.__ATTRIBUTES__.addressType}
 		</div>
 		<div class="z-formrow">
 			{formlabel for='inTown' __text='Town:'}
 			{assign var="placeType" value=$settings.place }
-			{formtextinput id="inTown" maxLength=300 mandatory=true text=$user.__ATTRIBUTES__.$placeType}
+			{formtextinput id="inTown" maxLength=300 mandatory=true text=$user.__ATTRIBUTES__.placeType}
 		</div>
 		<div class="z-formrow">
 			{formlabel for='inPlz' __text='PLZ:'}
 			{assign var="plzType" value=$settings.plz}
-			{formtextinput id="inPlz" maxLength=300 mandatory=true text=$user.__ATTRIBUTES__.$plzType}
+			{formtextinput id="inPlz" maxLength=300 mandatory=true text=$user.__ATTRIBUTES__.plzType}
 		</div>
 		<div class="z-formrow">
 			{formlabel for='inBirthday' __text='Birthday:'}
 			{assign var="birthdayType" value=$settings.birthday}
-			{formtextinput id="inBirthday" maxLength=300 mandatory=true text=$user.__ATTRIBUTES__.$birthdayType}
-			<input type="hidden" name="inBirthday_org" id="inBirthday_org" value="{$user.__ATTRIBUTES__.$birthdayType}"/>
+			{formtextinput id="inBirthday" maxLength=300 mandatory=true text=$user.__ATTRIBUTES__.birthdayType}
+			<input type="hidden" name="inBirthday_org" id="inBirthday_org" value="{$user.__ATTRIBUTES__.birthdayType}"/>
 		</div>
 		<div class="z-formrow">
 			{formlabel for='inTel' __text='Phone:'}
 			{assign var="phoneType" value=$settings.phone}
-			{formtextinput id="inTel" maxLength=300 mandatory=false text=$user.__ATTRIBUTES__.$phoneType}
+			{formtextinput id="inTel" maxLength=300 mandatory=false text=$user.__ATTRIBUTES__.phoneType}
 		</div>
 		<div class="z-formrow">
 			{formlabel for='inHdy' __text='Mobile:'}
 			{assign var="mobileType" value=$settings.mobile}
-			{formtextinput id="inHdy" maxLength=300 mandatory=false text=$user.__ATTRIBUTES__.$mobileType}
+			{formtextinput id="inHdy" maxLength=300 mandatory=false text=$user.__ATTRIBUTES__.mobileType}
 		</div>
 		<div class="z-formrow">
 			{formlabel for='inParentHdy' __text='Parent Mobile:'}
 			{assign var="parentmobileType" value=$settings.parentmobile}
-			{formtextinput id="inParentHdy" maxLength=300 mandatory=false text=$user.__ATTRIBUTES__.$parentmobileType}
+			{formtextinput id="inParentHdy" maxLength=300 mandatory=false text=$user.__ATTRIBUTES__.parentmobileType}
 		</div>
 		<div class="z-formrow">
 			{formlabel for='inEmail' __text='e-Mail:'}
