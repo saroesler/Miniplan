@@ -120,7 +120,10 @@ class Miniplan_Entity_User extends Zikula_EntityAccess
     public function getEinteilungsIndex(){
     	//liefert die Anzahl an Gottesdiensten zurück, an denen der Mini kann
     	$temp = array_keys($this->my_calendar, 1);
-    	return count($this->my_calendar) - count($temp);
+    	
+    	//Leere Zellen werden als nicht können gewertet
+    	$temp2 = array_keys($this->my_calendar, '');
+    	return count($this->my_calendar) - count($temp) - count($temp2);
     }
     
     

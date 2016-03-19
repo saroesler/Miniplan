@@ -158,17 +158,7 @@ class Miniplan_Creator_Mini //extends Zikula_AbstractController
 		while((($worship->getDate()- ($vars['voungDistanceDays'] * 86400) )<= $plan[$my_worship_index]->getDate() )||(($worship_index-$my_worship_index) <( $vars['voungDistanceWorships'] + 10)))
 		{
 			$logManager->add((str_pad(__LINE__, 3, 0, STR_PAD_LEFT)),"  Prüfe auf alten Gottesdienst ".$plan[$my_worship_index]->getId());
-			$logManager->add((str_pad(__LINE__, 3, 0, STR_PAD_LEFT)),"  Prüfe auf alten Gottesdienst ".$plan[$my_worship_index]->getId() . " - Abstand: ". $worship->getDate() - $plan[$my_worship_index]->getDate() );
-			/*for($i=0; $i<worship->getMinisRequested();$i++)
-			{
-				if($worship->getMini($i) == $this->database->getMid())
-				{
-					$mini_ok = 0;
-					$logManager.= "  ".$this->database->getMid()."in".$my_worship_index."eingeteilt   \n";
-					$logManager.= "zu nahe eingeteilt\n";
-				}
-			}
-			*/
+			
 			if(($plan[$my_worship_index]->hasMini($this->database->getMid())))
 			{
 				$logManager->add((str_pad(__LINE__, 3, 0, STR_PAD_LEFT)),"zu nahe eingeteilt!");
@@ -193,13 +183,14 @@ class Miniplan_Creator_Mini //extends Zikula_AbstractController
 	*
 	* Rückgabewerte:
 	* 	0: Mini kann nicht
-	*	1: Mini kann
-	* 	2: Mini kann nicht
+	*	1: Mini kann nicht, da Abstand zu gering
+	*	2: Mini kann
+	* 	3: Mini ist schon im temp Gottesdienst
 	**/
 	public function test_mini($args)
 	{
 		//look, if mini have time
-		$mini_ok = 1;
+		$mini_ok = 2;
 		$my_worship_index = $args["windex"];
 		$logManager = $args["log"];
 		$plan = $args["plan"];
@@ -211,23 +202,21 @@ class Miniplan_Creator_Mini //extends Zikula_AbstractController
 		//mini kann nicht
 		if($my_calendar[$worship->getId()] == 1 && $my_calendar[$worship->getId()] != "")
 		{
-			$mini_ok = 0;
 			$logManager->add((str_pad(__LINE__, 3, 0, STR_PAD_LEFT)),"kann nicht!".$my_calendar[$worship->getId()]);
-			return $mini_ok;
+			return 0;
 		}
 		
 		//es scheitert am Abstand
 		if($this->abstand($plan, $my_worship_index, $logManager, $vars) >= 0){
 			$logManager->add((str_pad(__LINE__, 3, 0, STR_PAD_LEFT)),"zu nahe eingeteilt!");
-			return 0;
+			return 1;
 		}
 		
 		//if devided into the temp array
 		if( $worship->miniIsInTemp($this->database->getMid()) )
 		{
-			$mini_ok = 2;
 			$logManager->add((str_pad(__LINE__, 3, 0, STR_PAD_LEFT)),"schon im Temp!");
-			return $mini_ok;
+			return 3;
 		}
 		
 		

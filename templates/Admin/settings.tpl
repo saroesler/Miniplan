@@ -173,17 +173,17 @@
     <fieldset>
 		<legend>{gt text='Vuong-Algorithm'}</legend>
 		<div class="z-formrow">
-			{formlabel for='voungMaxLevel' text='enter ministrant maximal'}
+			{formlabel for='voungMaxLevel' __text='enter ministrant maximal'}
 			{formtextinput id="voungMaxLevel" maxLength=3 size=3 mandatory=true text=$settings.voungMaxLevel}
 		</div>
 		
 		<div class="z-formrow">
-			{formlabel for='voungDistanceDays' text='distance in days'}
+			{formlabel for='voungDistanceDays' __text='distance in days'}
 			{formtextinput id="voungDistanceDays" maxLength=3 size=3 mandatory=true text=$settings.voungDistanceDays}
 		</div>
 		
 		<div class="z-formrow">
-			{formlabel for='voungDistanceWorships' text='distance in worhsips'}
+			{formlabel for='voungDistanceWorships' __text='distance in worhsips'}
 			{formtextinput id="voungDistanceWorships" maxLength=3 size=3 mandatory=true text=$settings.voungDistanceWorships}
 		</div>
 	</fieldset>

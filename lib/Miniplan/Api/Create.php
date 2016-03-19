@@ -101,6 +101,11 @@ class Miniplan_Api_Create extends Zikula_AbstractApi
 			return $MiniplanData;
 		}
 		
+		if($this->getVar('voungMaxLevel') == 0){
+			$logManager->add( ( str_pad(__LINE__, 3, 0, STR_PAD_LEFT)),  "Die maximale Einteilungshäufigkeit ist 0!");
+			$error_warnings .= "Die maximale Einteilungshäufigkeit ist 0!\n";
+		}
+		
 		/**
 		* General calculating:
 		*	all requested
@@ -250,11 +255,12 @@ class Miniplan_Api_Create extends Zikula_AbstractApi
 							if($minis_array[$minis_rand_array[$my_mini_index]]->eingeteilt() == $my_reverence)
 							{
 								$logManager->add((str_pad(__LINE__, 3, 0, STR_PAD_LEFT)),"  mini".$minis_rand_array[$my_mini_index]." noch nicht so oft eingetielt");
-								if($minis_array[$minis_rand_array[$my_mini_index]]->test_mini(array(
+								$mini_test = $minis_array[$minis_rand_array[$my_mini_index]]->test_mini(array(
 									'windex' =>$worship_index,
 									'plan'=>$plan,
 									'log'=>$logManager
-									)))
+									));
+								if($mini_test > 1)
 								//mini kann
 								{
 									$mini_index = $my_mini_index;
@@ -263,8 +269,10 @@ class Miniplan_Api_Create extends Zikula_AbstractApi
 									//setze first_item auf ok.
 									$first_item=-1;
 									break;
-								} else {
+								//Zu nahe eingeteilt
+								} elseif($mini_test == 1) {
 									$logManager->add((str_pad(__LINE__, 3, 0, STR_PAD_LEFT)),"Abstand " . $distance);
+									$distance = $minis_array[$minis_rand_array[$my_mini_index]]-> abstand($plan, $worship_index, $logManager, $this->getVars());
 									if($distance > 0){
 										$logManager->add((str_pad(__LINE__, 3, 0, STR_PAD_LEFT)),"Für später vormerken.");
 										$hasit = 0;
@@ -324,8 +332,8 @@ class Miniplan_Api_Create extends Zikula_AbstractApi
 							$maxcount = $worship->needMini();
 							for($i = 0; $i < $maxcount; $i ++){
 								$worship->addTempPlanMini( $minis_rand_array[$alternativ[$i]['mid']], $minis_array[$minis_rand_array[$alternativ[$i]['mid']]]->getPpriority() );
-								$error_warnings.="<br/>Warnung: Der Ministrant " . $minis_array[$minis_rand_array[$alternativ[$i]['mid']]]->getUsername().'('.$minis_rand_array[$ar[$i][0]].') wurde in den Gottesdienst ' . $worship->getId() . 'eingeteilt, obwohl er kurz zuvor bereits eingeteilt wurde.';
-								$logManager->add((str_pad(__LINE__, 3, 0, STR_PAD_LEFT)),"Warnung: Der Ministrant " . $minis_array[$minis_rand_array[$alternativ[$i]['mid']]]->getUsername().'('.$minis_rand_array[$ar[$i][0]].') wurde in den Gottesdienst ' . $worship->getId() . 'eingeteilt, obwohl er kurz zuvor bereits eingeteilt wurde.');
+								$error_warnings.="<br/>Warnung: Der Ministrant " . $minis_array[$minis_rand_array[$alternativ[$i]['mid']]]->getUsername().' wurde in den Gottesdienst ' . $worship->getId() . 'eingeteilt, obwohl er kurz zuvor bereits eingeteilt wurde.';
+								$logManager->add((str_pad(__LINE__, 3, 0, STR_PAD_LEFT)),"Warnung: Der Ministrant " . $minis_array[$minis_rand_array[$alternativ[$i]['mid']]]->getUsername().' wurde in den Gottesdienst ' . $worship->getId() . 'eingeteilt, obwohl er kurz zuvor bereits eingeteilt wurde.');
 					
 							}
 							$worship->addTempToPlan($logManager, $statistik);
@@ -360,10 +368,10 @@ class Miniplan_Api_Create extends Zikula_AbstractApi
 					
 					
 					//mini kann eingeteilt werden
-					if($mini_ok)
+					if($mini_ok > 1)
 					{
 						$logManager->add((str_pad(__LINE__, 3, 0, STR_PAD_LEFT))," mini ".$minis_rand_array[$my_mini_index]."kann--- Nicname:".$minis_array[$minis_rand_array[$my_mini_index]]->getUsername());
-						if($mini_ok==1)
+						if($mini_ok==2)
 							//mini kann -> vormerken
 							$worship->addTempPlanMini( $minis_rand_array[$mini_index], $minis_array[$minis_rand_array[$mini_index]]->getPpriority() );
 							$logManager->add((str_pad(__LINE__, 3, 0, STR_PAD_LEFT)),"Vormerken von Mini ".$minis_rand_array[$mini_index]);
@@ -371,7 +379,7 @@ class Miniplan_Api_Create extends Zikula_AbstractApi
 						//look for partner
 						$mypid = $minis_array[$minis_rand_array[$mini_index]] -> getPid();
 						//mini schon mal einteilt
-						if($mini_ok==2 || $worship->miniIsInTemp($mypid))
+						if($mini_ok==3 || $worship->miniIsInTemp($mypid))
 						{
 							//schalte partner aus, dies verhindert eine endlosschleife
 							$logManager->add((str_pad(__LINE__, 3, 0, STR_PAD_LEFT))," Partner Schleife gefunden!");
@@ -403,7 +411,9 @@ class Miniplan_Api_Create extends Zikula_AbstractApi
 						else
 							$logManager->add((str_pad(__LINE__, 3, 0, STR_PAD_LEFT)),"Der Ministrant ".$my_mini_index."hat keinen Partner");
 					}//end mini kann
-					else{
+					
+					//Zu nahe eingeteilt
+					elseif($mini_ok == 1){
 						$distance = $minis_array[$minis_rand_array[$my_mini_index]]-> abstand($plan, $worship_index, $logManager, $this->getVars());
 						$logManager->add((str_pad(__LINE__, 3, 0, STR_PAD_LEFT)),"Abstand " . $distance);
 						if($distance > 0){
@@ -505,7 +515,7 @@ class Miniplan_Api_Create extends Zikula_AbstractApi
 		foreach($minis_array as $mini){
 			if($mini->getEinteilungsIndex() != 0 && $mini->eingeteilt() == 0)
 			{
-				$error_warnings.="<br/>Warnung: Der Ministrant ".$mini->getUsername().'wurde nicht eingeteilt! Bitte überprüfen Sie ob es genügend Messen gibt, oder ob der Partner an allen Terminen nicht kann!';
+				$error_warnings.="<br/>Warnung: Der Ministrant ".$mini->getUsername().'wurde nicht eingeteilt! '.$mini->getEinteilungsIndex().'Bitte überprüfen Sie ob es genügend Messen gibt, oder ob der Partner an allen Terminen nicht kann!';
 			
 				$logManager->add((str_pad(__LINE__, 3, 0, STR_PAD_LEFT)),
 					" Warnung: Der Ministrant ".$mini->getUsername().'wurde nicht eingeteilt! Bitte überprüfen Sie ob es genügend Messen gibt, oder ob der Partner an allen Terminen nicht kann!'
