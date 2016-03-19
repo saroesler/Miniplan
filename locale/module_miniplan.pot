@@ -8,7 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zikula 1.x\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-03-19 10:42+0000\n"
+=======
+"POT-Creation-Date: 2016-03-18 16:56+0000\n"
+>>>>>>> 4c46d2191a581d5c65dd4b44e2bf96ebe9569900
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"

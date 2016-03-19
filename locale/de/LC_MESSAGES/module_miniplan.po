@@ -7,8 +7,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Miniplan 1.x\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-03-19 10:42+0000\n"
 "PO-Revision-Date: 2016-03-19 11:43+0100\n"
+=======
+"POT-Creation-Date: 2016-03-18 16:56+0000\n"
+"PO-Revision-Date: 2016-03-18 18:03+0100\n"
+>>>>>>> 4c46d2191a581d5c65dd4b44e2bf96ebe9569900
 "Last-Translator: Sascha Rösler <i-loko@t-online.de>\n"
 "Language-Team: Sascha Rösler <i-loko@t-online.de>\n"
 "Language: Deutsch (DE)\n"
@@ -303,6 +308,7 @@ msgstr "Die Kirche ist nicht möglich!"
 #: lib/Miniplan/Controller/Ajax.php:58
 msgid "There is no valid number of ministrants!"
 msgstr "Die Anzahl der Ministranten ist nicht möglich!"
+<<<<<<< HEAD
 
 #: lib/Miniplan/Controller/Ajax.php:60
 msgid "There is no valid time!"
@@ -412,6 +418,117 @@ msgstr "Kirche:"
 msgid "Time:"
 msgstr "Zeit:"
 
+=======
+
+#: lib/Miniplan/Controller/Ajax.php:60
+msgid "There is no valid time!"
+msgstr "Die Zeit ist nicht möglich!"
+
+#: lib/Miniplan/Controller/Ajax.php:71 lib/Miniplan/Controller/Ajax.php:95
+#: lib/Miniplan/Controller/Ajax.php:119 lib/Miniplan/Controller/Ajax.php:146
+#: lib/Miniplan/Controller/Ajax.php:176
+msgid "Saved"
+msgstr "Gespeichert"
+
+#: lib/Miniplan/Controller/Ajax.php:87 lib/Miniplan/Controller/Ajax.php:111
+#: lib/Miniplan/Controller/Ajax.php:135 lib/Miniplan/Controller/Ajax.php:163
+#: lib/Miniplan/Controller/Ajax.php:247
+msgid "There is no valid mid!"
+msgstr "Es fehlt eine gültige mid!"
+
+#: lib/Miniplan/Controller/Ajax.php:165
+msgid "There is no valid worship!"
+msgstr "Es gibt keinen gültigen Gottesdienst!"
+
+#: lib/Miniplan/Controller/Ajax.php:229
+msgid "There is no valid id!"
+msgstr "Es fehlt eine gültige Id!"
+
+#: lib/Miniplan/Controller/Ajax.php:249
+msgid "There is no valid wid!"
+msgstr "Es fehlt eine gültige Wid!"
+
+#: templates/Admin/Plan_CreatedError.tpl:12
+msgid "Miniplan creation failes"
+msgstr "Die Erstellung des Miniplans schlug fehl!"
+
+#: templates/Admin/Plan_CreatedError.tpl:15
+#: templates/Admin/Plan_Created.tpl:62
+msgid "Error and Warnings"
+msgstr "Fehler und Warnungen"
+
+#: templates/Admin/Plan_CreatedError.tpl:21
+#: templates/Admin/Plan_Created.tpl:73 templates/Admin/Plan_Created.tpl:78
+msgid "Get it as an LibreOffice/ OpenOffice- Document (.odt)"
+msgstr "Als LibreOffice/ OpenOffice downloaden (.odt)"
+
+#: templates/Admin/Plan_CreatedError.tpl:25
+#: templates/Admin/Plan_Created.tpl:86
+msgid "Get the Log- file"
+msgstr "Download der Log-Datei"
+
+#: templates/Admin/Address.tpl:6
+msgid "Nr"
+msgstr "Nr"
+
+#: templates/Admin/Address.tpl:7 templates/Admin/Church.tpl:8
+#: templates/Admin/Form.tpl:10 templates/Admin/Group.tpl:7
+#: templates/Admin/Requests.tpl:8
+msgid "Name"
+msgstr "Name"
+
+#: templates/Admin/Address.tpl:8
+msgid "First Name"
+msgstr "Vorname"
+
+#: templates/Admin/Address.tpl:10
+msgid "Place"
+msgstr "Ort"
+
+#: templates/Admin/Address.tpl:11
+msgid "PLZ"
+msgstr "PLZ"
+
+#: templates/Admin/Address.tpl:12
+msgid "Birthday"
+msgstr "Geburtstag"
+
+#: templates/Admin/Address.tpl:13
+msgid "Telephone"
+msgstr "Telefon"
+
+#: templates/Admin/Address.tpl:14
+msgid "Mobile"
+msgstr "Mobil"
+
+#: templates/Admin/Address.tpl:15
+msgid "Parent Mobile"
+msgstr "Eltern Mobil"
+
+#: templates/Admin/Address.tpl:16
+msgid "e-Mail"
+msgstr "e-Mail"
+
+#: templates/Admin/Address.tpl:38 templates/Admin/passedDates.tpl:91
+#: templates/Admin/CreatePlanManuely.tpl:130 templates/Admin/ViewPlan.tpl:16
+msgid "Print"
+msgstr "Drucken"
+
+#: templates/Admin/worshipEdit.tpl:19 templates/Admin/New_Worship.tpl:55
+msgid "Form:"
+msgstr "Vorlage:"
+
+#: templates/Admin/worshipEdit.tpl:23 templates/Admin/New_Worship.tpl:59
+#: templates/Admin/FormEdit.tpl:10
+msgid "Church:"
+msgstr "Kirche:"
+
+#: templates/Admin/worshipEdit.tpl:27 templates/Admin/New_Worship.tpl:63
+#: templates/Admin/FormEdit.tpl:14
+msgid "Time:"
+msgstr "Zeit:"
+
+>>>>>>> 4c46d2191a581d5c65dd4b44e2bf96ebe9569900
 #: templates/Admin/worshipEdit.tpl:31 templates/Admin/New_Worship.tpl:67
 #: templates/Admin/FormEdit.tpl:18
 msgid "Who many ministrants are reqested?"
@@ -920,6 +1037,7 @@ msgstr "Zurücksetzten des %s - Status für jeden Ministranten"
 #: templates/Admin/settings.tpl:172
 msgid "Creation Algorithm"
 msgstr "Erstellungsalgorithmus"
+<<<<<<< HEAD
 
 #: templates/Admin/settings.tpl:174
 msgid "Vuong-Algorithm"
@@ -936,6 +1054,12 @@ msgstr "Abstand in Tagen"
 #: templates/Admin/settings.tpl:186
 msgid "distance in worhsips"
 msgstr "Abstand in Gottesdiensten"
+=======
+
+#: templates/Admin/settings.tpl:174
+msgid "Vuong-Algorithm"
+msgstr "Vuongsche Algorithmus"
+>>>>>>> 4c46d2191a581d5c65dd4b44e2bf96ebe9569900
 
 #: templates/Admin/settings.tpl:191
 msgid "Profile Settings"
